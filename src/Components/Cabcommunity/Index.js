@@ -4,13 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./style.css";
 import { Typography } from "@mui/material";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
+import { Card, CardBody, CardFooter } from "@material-tailwind/react";
 
 const cardData = [
   {
