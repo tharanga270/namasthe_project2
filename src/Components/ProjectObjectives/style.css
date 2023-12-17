@@ -1,0 +1,22 @@
+.project_h4 {
+  font-weight: 800;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.project_typography1 {
+  font-size: 35px !important;
+  font-weight: 700 !important;
+}
+.project_body {
+  /* margin-left: 7rem; */
+  /* margin-right: 7rem; */
+  font-family: "Poppins", sans-serif;
+}
+
+.projectObj_footer {
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
