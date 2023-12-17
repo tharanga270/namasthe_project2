@@ -1,0 +1,22 @@
+.learn_h4 {
+  font-weight: 800;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.learn_body {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.learn_typography1 {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+}
+
+.learn_typography3 {
+  font-size: 25px !important;
+  font-weight: 650;
+}
