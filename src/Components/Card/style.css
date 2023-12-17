@@ -1,0 +1,13 @@
+.learn_p {
+  text-align: center;
+  font-weight: 600;
+  color: #769863;
+  cursor: "pointer";
+  font-size: 16px;
+}
+.learn_p:hover {
+  color: #65b741;
+}
+.learn_a {
+  text-decoration: "none";
+}
