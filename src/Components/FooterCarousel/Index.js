@@ -49,7 +49,7 @@ const FooterCarousel = () => {
   return (
     <div
       style={{
-        marginTop: "5rem",
+        marginTop: "3rem",
         backgroundColor: "rgba(118, 152, 99, 0.3)",
         marginBottom: "9rem",
       }}

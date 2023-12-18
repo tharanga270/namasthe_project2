@@ -15,7 +15,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
   {
     id: 9,
@@ -95,7 +95,7 @@ const data = [
     description: "Pat — marketing strategist, writer, and founder of ",
     description1: "Marketing Partners — serves as creative change ",
     description2: "director for our client team. ",
-    email: "aaa@gmail.com",
+    email: "example@mail.com",
   },
 ];
 const GlobalTeam = () => {

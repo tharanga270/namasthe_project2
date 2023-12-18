@@ -11,18 +11,25 @@ const NeedToJoin = () => {
   };
 
   return (
-    <div style={{ marginTop: "10rem", marginBottom: "10rem" }}>
-      <h4 className="text-gray-800 text-center text-5xl font-bold">
-        <Link to="/join">
-          <span
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            style={hoverStyles}
-          >
-            Need to join ?
-          </span>
-        </Link>
-      </h4>
+    <div>
+      <div style={{ marginTop: "10rem", marginBottom: "10rem" }}>
+        <h4 className="text-gray-800 text-center text-5xl font-bold">
+          <Link to="/join">
+            <span
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              style={hoverStyles}
+            >
+              Need to join ?
+            </span>
+          </Link>
+        </h4>
+      </div>
+      <div style={{ marginTop: "5rem" }}>
+        <h4 className="text-gray-800 text-center text-5xl font-bold">
+          <span>Our Collaborators</span>
+        </h4>
+      </div>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { Card, CardContent, Typography, Box } from "@mui/material";
 import { projectcard1, projectcard2 } from "../../config/Images/Images";
 import { Grid } from "@mui/material";
 import "./style.css";
+import { Link } from "react-router-dom";
 const ProjectCard = () => {
   return (
     <div style={{}}>
@@ -88,9 +89,9 @@ const ProjectCard = () => {
                 of University of Manchester expertise.
               </Typography>
 
-              <a href="/learn-more">
+              <Link to="/learn-more" className="learn_a">
                 <p className="learn_p">Learn More</p>
-              </a>
+              </Link>
             </CardContent>
           </Card>
         </Grid>
@@ -175,9 +176,9 @@ const ProjectCard = () => {
                 child’s needs and know how best to support them.
               </Typography>
 
-              <a href="/projectobj" className="learn_a">
+              <Link to="/projectobj" className="learn_a">
                 <p className="learn_p">Learn More</p>
-              </a>
+              </Link>
             </CardContent>
           </Card>
         </Grid>
