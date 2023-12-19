@@ -4,6 +4,7 @@ import { projectcard1, projectcard2 } from "../../config/Images/Images";
 import { Grid } from "@mui/material";
 import "./style.css";
 import { Link } from "react-router-dom";
+
 const ProjectCard = () => {
   return (
     <div style={{}}>
@@ -31,8 +32,8 @@ const ProjectCard = () => {
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
-                sm: "2px",
-                xs: "2px",
+                sm: "10px",
+                xs: "10px",
               },
               zIndex: 999,
 

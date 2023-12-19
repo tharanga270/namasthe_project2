@@ -35,14 +35,18 @@ const ProjectObjectivesCard = () => {
         className="project_body"
         sx={{ ml: { xs: 0, lg: "7rem" }, mr: { xs: 0, lg: "7rem" } }}
       >
-        <h4 className="project_h4">Project background</h4>
+        {/* <h4 className="project_h4">Project Objectives</h4> */}
+        <Typography variant="h4" gutterBottom className="project_h4">
+          {" "}
+          Project Objectives
+        </Typography>
 
         <Typography
           variant="body2"
           sx={{
             mb: 2,
-            fontSize: "35px",
-            fontWeight: 700,
+            fontSize: { lg: "35px", xs: "25px", md: "30px" },
+            fontWeight: { xs: "300", lg: "700", md: "500", sm: "400" },
             ml: { xs: 2, lg: 6, md: 3 },
             mr: { xs: 2, lg: 4, md: 3 },
           }}
@@ -71,9 +75,16 @@ const ProjectObjectivesCard = () => {
                 sx={{
                   ml: { xs: 2 },
                   mr: { xs: 2 },
+                  height: {
+                    xl: "300px",
+                    lg: "350px",
+                    md: "290px",
+                    sm: "250px",
+                    xs: "290px",
+                  },
 
                   mt: 2,
-                  height: "270px",
+                  // height: "270px",
                   width: "600px",
                   borderRadius: "15px",
                   backgroundColor:
@@ -86,7 +97,12 @@ const ProjectObjectivesCard = () => {
                   sx={{
                     mb: 1.5,
                     p: 3,
-                    fontSize: "27px",
+                    fontSize: {
+                      lg: "27px",
+                      md: "24px",
+                      sm: "24px",
+                      xs: "24px",
+                    },
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
