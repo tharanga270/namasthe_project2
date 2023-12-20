@@ -51,6 +51,15 @@ const Autism = () => {
               variant="h4"
               gutterBottom
               className="autism_Typography"
+              sx={{
+                fontSize: {
+                  xl: "40px",
+                  lg: "40px",
+                  md: "39px",
+                  sm: "34px",
+                  xs: "34px",
+                },
+              }}
             >
               What is Autism
             </Typography>
@@ -68,6 +77,14 @@ const Autism = () => {
                 mr: {
                   lg: "4rem",
                   md: "3rem",
+                },
+
+                fontSize: {
+                  xl: "30px",
+                  lg: "30px",
+                  md: "29px",
+                  sm: "27px",
+                  xs: "23px",
                 },
               }}
             >

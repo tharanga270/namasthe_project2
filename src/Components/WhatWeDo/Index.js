@@ -40,7 +40,7 @@ const WeDo = () => {
       </Typography>
       <Box
         sx={{
-          ml: { lg: "15rem", xl: "25rem", md: "15rem", sm: "5rem", xs: "2rem" },
+          ml: { lg: "4rem", xl: "12rem", md: "4rem", sm: "0rem", xs: "0rem" },
         }}
       >
         <Grid
@@ -53,189 +53,274 @@ const WeDo = () => {
           }}
         >
           <Grid item lg={5} md={6} sm={12} xs={12}>
+            {/*  */}
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "flex-start",
+                  xs: "center",
                   md: "flex-start",
                   lg: "flex-start",
-                  sm: "flex-start",
-                },
-                mr: {
-                  xs: "2rem",
+                  sm: "center",
                 },
               }}
             >
-              <div
-                style={{
-                  display: "flex",
+              <Box
+                sx={{
+                  display: {
+                    xl: "flex",
+                    lg: "flex",
+                    md: "flex",
+                    sm: "",
+                    xs: "",
+                  },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
                 }}
               >
-                <img
-                  src={images.image1.image}
-                  alt={images.image1.text}
-                  className="imageContainer"
-                  style={{
-                    border: "3px solid #769863",
-                    borderRadius: "15px",
-                    height: "100px",
-                    width: "100px",
-                  }}
-                />{" "}
-                <Typography
+                <Box
                   sx={{
-                    paddingLeft: { xs: 2 },
-                    textAlign: { xs: "left", lg: "left" },
-                    fontSize: "24px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
+                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
+                    justifyContent: {
+                      xl: "",
+                      lg: "",
+                      sm: "center",
+                      md: "",
+                      xs: "center",
+                    },
                   }}
                 >
-                  {images.image1.text}
-                </Typography>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item lg={5} md={6} sm={12} xs={12}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: {
-                  xs: "flex-start",
-                  md: "flex-start",
-                  lg: "flex-start",
-                  sm: "flex-start",
-                },
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  height: "140px",
-                }}
-              >
-                <img
-                  src={images.image3.image}
-                  alt={images.image3.text}
-                  className="imageContainer"
-                  style={{
-                    border: "3px solid #769863",
-                    borderRadius: "15px",
-                    height: "100px",
-                    width: "100px",
-                  }}
-                />{" "}
-                <Typography
-                  sx={{
-                    paddingLeft: { xs: 2 },
-                    textAlign: { xs: "left", lg: "left" },
-                    fontSize: "24px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
-                  }}
-                >
-                  {images.image3.text}
-                </Typography>
-              </div>
+                  <img
+                    src={images.image1.image}
+                    alt={images.image1.text}
+                    className="imageContainer"
+                    style={{
+                      border: "3px solid #769863",
+                      borderRadius: "15px",
+                      height: "100px",
+                      width: "100px",
+                    }}
+                  />{" "}
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      paddingLeft: { xs: 2 },
+                      textAlign: { xs: "left", lg: "left" },
+                      fontSize: "24px",
+                      fontWeight: "300",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                  >
+                    {images.image1.text}
+                  </Typography>
+                </Box>
+              </Box>
             </Box>
           </Grid>
 
           <Grid item lg={5} md={6} sm={12} xs={12}>
+            {/*  */}
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "flex-start",
+                  xs: "center",
                   md: "flex-start",
                   lg: "flex-start",
-                  sm: "flex-start",
+                  sm: "center",
                 },
               }}
             >
-              <div
-                style={{
-                  display: "flex",
+              <Box
+                sx={{
+                  display: {
+                    xl: "flex",
+                    lg: "flex",
+                    md: "flex",
+                    sm: "",
+                    xs: "",
+                  },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
                 }}
               >
-                <img
-                  src={images.image4.image}
-                  alt={images.image4.text}
-                  className="imageContainer"
-                  style={{
-                    border: "3px solid #769863",
-                    borderRadius: "15px",
-                    height: "100px",
-                    width: "100px",
-                  }}
-                />
-
-                <Typography
+                <Box
                   sx={{
-                    paddingLeft: { xs: 2 },
-                    textAlign: { xs: "left", lg: "left" },
-                    fontSize: "24px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
+                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
+                    justifyContent: {
+                      xl: "",
+                      lg: "",
+                      sm: "center",
+                      md: "",
+                      xs: "center",
+                    },
                   }}
                 >
-                  {images.image4.text}
-                </Typography>
-              </div>
+                  <img
+                    src={images.image3.image}
+                    alt={images.image3.text}
+                    className="imageContainer"
+                    style={{
+                      border: "3px solid #769863",
+                      borderRadius: "15px",
+                      height: "100px",
+                      width: "100px",
+                    }}
+                  />{" "}
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      paddingLeft: { xs: 2 },
+                      textAlign: { xs: "left", lg: "left" },
+                      fontSize: "24px",
+                      fontWeight: "300",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                  >
+                    {images.image3.text}
+                  </Typography>
+                </Box>
+              </Box>
             </Box>
           </Grid>
+
           <Grid item lg={5} md={6} sm={12} xs={12}>
+            {/*  */}
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "flex-start",
+                  xs: "center",
                   md: "flex-start",
                   lg: "flex-start",
-                  sm: "flex-start",
+                  sm: "center",
                 },
               }}
             >
-              <div
-                style={{
-                  display: "flex",
+              <Box
+                sx={{
+                  display: {
+                    xl: "flex",
+                    lg: "flex",
+                    md: "flex",
+                    sm: "",
+                    xs: "",
+                  },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
                 }}
               >
-                <img
-                  src={images.image2.image}
-                  alt={images.image2.text}
-                  className="imageContainer"
-                  style={{
-                    border: "3px solid #769863",
-                    borderRadius: "15px",
-                    height: "100px",
-                    width: "100px",
-                  }}
-                />{" "}
-                <Typography
+                <Box
                   sx={{
-                    paddingLeft: { xs: 2 },
-                    textAlign: { xs: "left", lg: "left" },
-                    fontSize: "24px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
+                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
+                    justifyContent: {
+                      xl: "",
+                      lg: "",
+                      sm: "center",
+                      md: "",
+                      xs: "center",
+                    },
                   }}
                 >
-                  {" "}
-                  {images.image2.text}
-                </Typography>
-              </div>
+                  <img
+                    src={images.image4.image}
+                    alt={images.image4.text}
+                    className="imageContainer"
+                    style={{
+                      border: "3px solid #769863",
+                      borderRadius: "15px",
+                      height: "100px",
+                      width: "100px",
+                    }}
+                  />{" "}
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      paddingLeft: { xs: 2 },
+                      textAlign: { xs: "left", lg: "left" },
+                      fontSize: "24px",
+                      fontWeight: "300",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                  >
+                    {images.image4.text}
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Grid>
+
+          <Grid item lg={5} md={6} sm={12} xs={12}>
+            {/*  */}
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "center",
+                  md: "flex-start",
+                  lg: "flex-start",
+                  sm: "center",
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  display: {
+                    xl: "flex",
+                    lg: "flex",
+                    md: "flex",
+                    sm: "",
+                    xs: "",
+                  },
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "140px",
+                }}
+              >
+                <Box
+                  sx={{
+                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
+                    justifyContent: {
+                      xl: "",
+                      lg: "",
+                      sm: "center",
+                      md: "",
+                      xs: "center",
+                    },
+                  }}
+                >
+                  <img
+                    src={images.image2.image}
+                    alt={images.image2.text}
+                    className="imageContainer"
+                    style={{
+                      border: "3px solid #769863",
+                      borderRadius: "15px",
+                      height: "100px",
+                      width: "100px",
+                    }}
+                  />{" "}
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      paddingLeft: { xs: 2 },
+                      textAlign: { xs: "left", lg: "left" },
+                      fontSize: "24px",
+                      fontWeight: "300",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                  >
+                    {images.image2.text}
+                  </Typography>
+                </Box>
+              </Box>
             </Box>
           </Grid>
         </Grid>
