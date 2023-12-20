@@ -8,7 +8,7 @@ import {
 import Grid from "@mui/material/Grid";
 import { Typography, Box } from "@mui/material";
 import "./style.css";
-
+import CardMedia from "@mui/material/CardMedia";
 const images = {
   image1: { image: detection1, text: " Detection workstream" },
   image2: { image: intervention1, text: "Implementation workstream" },
@@ -53,7 +53,7 @@ const WeDo = () => {
           }}
         >
           <Grid item lg={5} md={6} sm={12} xs={12}>
-            {/*  */}
+            {/* detection */}
             <Box
               sx={{
                 display: "flex",
@@ -71,43 +71,43 @@ const WeDo = () => {
                     xl: "flex",
                     lg: "flex",
                     md: "flex",
-                    sm: "",
-                    xs: "",
+                    sm: "block",
+                    xs: "block",
                   },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
+                  textAlign: {
+                    sm: "center",
+                    xs: "center",
+                  },
                 }}
               >
-                <Box
+                <CardMedia
+                  component="img"
+                  className="imageContainer"
+                  image={images.image1.image}
+                  alt={images.image1.image}
                   sx={{
-                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
-                    justifyContent: {
-                      xl: "",
-                      lg: "",
-                      sm: "center",
-                      md: "",
-                      xs: "center",
-                    },
+                    border: "3px solid #769863",
+                    borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
+                    margin: "auto",
                   }}
-                >
-                  <img
-                    src={images.image1.image}
-                    alt={images.image1.text}
-                    className="imageContainer"
-                    style={{
-                      border: "3px solid #769863",
-                      borderRadius: "15px",
-                      height: "100px",
-                      width: "100px",
-                    }}
-                  />{" "}
-                </Box>
+                />
+
                 <Box>
                   <Typography
                     sx={{
                       paddingLeft: { xs: 2 },
-                      textAlign: { xs: "left", lg: "left" },
+                      textAlign: {
+                        xs: "center",
+                        sm: "center",
+                        md: "left",
+                        lg: "left",
+                        xl: "left",
+                      },
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
@@ -121,7 +121,7 @@ const WeDo = () => {
           </Grid>
 
           <Grid item lg={5} md={6} sm={12} xs={12}>
-            {/*  */}
+            {/* engagement */}
             <Box
               sx={{
                 display: "flex",
@@ -139,43 +139,43 @@ const WeDo = () => {
                     xl: "flex",
                     lg: "flex",
                     md: "flex",
-                    sm: "",
-                    xs: "",
+                    sm: "block",
+                    xs: "block",
                   },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
+                  textAlign: {
+                    sm: "center",
+                    xs: "center",
+                  },
                 }}
               >
-                <Box
+                <CardMedia
+                  component="img"
+                  className="imageContainer"
+                  image={images.image3.image}
+                  alt={images.image3.image}
                   sx={{
-                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
-                    justifyContent: {
-                      xl: "",
-                      lg: "",
-                      sm: "center",
-                      md: "",
-                      xs: "center",
-                    },
+                    border: "3px solid #769863",
+                    borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
+                    margin: "auto",
                   }}
-                >
-                  <img
-                    src={images.image3.image}
-                    alt={images.image3.text}
-                    className="imageContainer"
-                    style={{
-                      border: "3px solid #769863",
-                      borderRadius: "15px",
-                      height: "100px",
-                      width: "100px",
-                    }}
-                  />{" "}
-                </Box>
+                />
+
                 <Box>
                   <Typography
                     sx={{
                       paddingLeft: { xs: 2 },
-                      textAlign: { xs: "left", lg: "left" },
+                      textAlign: {
+                        xs: "center",
+                        sm: "center",
+                        md: "left",
+                        lg: "left",
+                        xl: "left",
+                      },
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
@@ -189,7 +189,7 @@ const WeDo = () => {
           </Grid>
 
           <Grid item lg={5} md={6} sm={12} xs={12}>
-            {/*  */}
+            {/* community */}
             <Box
               sx={{
                 display: "flex",
@@ -207,43 +207,43 @@ const WeDo = () => {
                     xl: "flex",
                     lg: "flex",
                     md: "flex",
-                    sm: "",
-                    xs: "",
+                    sm: "block",
+                    xs: "block",
                   },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
+                  textAlign: {
+                    sm: "center",
+                    xs: "center",
+                  },
                 }}
               >
-                <Box
+                <CardMedia
+                  component="img"
+                  className="imageContainer"
+                  image={images.image4.image}
+                  alt={images.image4.image}
                   sx={{
-                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
-                    justifyContent: {
-                      xl: "",
-                      lg: "",
-                      sm: "center",
-                      md: "",
-                      xs: "center",
-                    },
+                    border: "3px solid #769863",
+                    borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
+                    margin: "auto",
                   }}
-                >
-                  <img
-                    src={images.image4.image}
-                    alt={images.image4.text}
-                    className="imageContainer"
-                    style={{
-                      border: "3px solid #769863",
-                      borderRadius: "15px",
-                      height: "100px",
-                      width: "100px",
-                    }}
-                  />{" "}
-                </Box>
+                />
+
                 <Box>
                   <Typography
                     sx={{
                       paddingLeft: { xs: 2 },
-                      textAlign: { xs: "left", lg: "left" },
+                      textAlign: {
+                        xs: "center",
+                        sm: "center",
+                        md: "left",
+                        lg: "left",
+                        xl: "left",
+                      },
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
@@ -257,7 +257,7 @@ const WeDo = () => {
           </Grid>
 
           <Grid item lg={5} md={6} sm={12} xs={12}>
-            {/*  */}
+            {/* inter */}
             <Box
               sx={{
                 display: "flex",
@@ -275,43 +275,43 @@ const WeDo = () => {
                     xl: "flex",
                     lg: "flex",
                     md: "flex",
-                    sm: "",
-                    xs: "",
+                    sm: "block",
+                    xs: "block",
                   },
                   alignItems: "center",
                   justifyContent: "center",
                   height: "140px",
+                  textAlign: {
+                    sm: "center",
+                    xs: "center",
+                  },
                 }}
               >
-                <Box
+                <CardMedia
+                  component="img"
+                  className="imageContainer"
+                  image={images.image2.image}
+                  alt={images.image2.image}
                   sx={{
-                    display: { sm: "flex", xs: "flex", lg: "", md: "", xl: "" },
-                    justifyContent: {
-                      xl: "",
-                      lg: "",
-                      sm: "center",
-                      md: "",
-                      xs: "center",
-                    },
+                    border: "3px solid #769863",
+                    borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
+                    margin: "auto",
                   }}
-                >
-                  <img
-                    src={images.image2.image}
-                    alt={images.image2.text}
-                    className="imageContainer"
-                    style={{
-                      border: "3px solid #769863",
-                      borderRadius: "15px",
-                      height: "100px",
-                      width: "100px",
-                    }}
-                  />{" "}
-                </Box>
+                />
+
                 <Box>
                   <Typography
                     sx={{
                       paddingLeft: { xs: 2 },
-                      textAlign: { xs: "left", lg: "left" },
+                      textAlign: {
+                        xs: "center",
+                        sm: "center",
+                        md: "left",
+                        lg: "left",
+                        xl: "left",
+                      },
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
