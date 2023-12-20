@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { laptopimg } from "../../config/Images/Images";
+
 const LearnMoreCard = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Box
       sx={{

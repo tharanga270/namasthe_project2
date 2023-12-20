@@ -1,5 +1,4 @@
 import React from "react";
-// import { Typography } from "@material-tailwind/react";
 import { namastheLogo2 } from "../../config/Images/Images";
 import Box from "@mui/joy/Box";
 import List from "@mui/joy/List";
@@ -10,7 +9,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
-import CardMedia from "@mui/material/CardMedia";
+
 const Footer = () => {
   return (
     <div>
@@ -20,6 +19,7 @@ const Footer = () => {
           // p: 2,
           borderRadius: { xs: 0, sm: "sm" },
           bgcolor: "#F8F8F8",
+          marginBottom: "2rem",
         }}
       >
         <Box
@@ -41,6 +41,7 @@ const Footer = () => {
               justifyContent: "center",
               paddingLeft: { xs: "30px", sm: "0", md: "0", lg: "0", xl: "0" },
               paddingRight: { xs: "30px", sm: "0", md: "0", lg: "0", xl: "0" },
+              marginTop: { xs: "1rem" },
             }}
           >
             <img
@@ -65,7 +66,7 @@ const Footer = () => {
             <ListItem
               nested
               sx={{
-                width: { xs: "50%", sm: "33%", md: 140, lg: 170 },
+                width: { xs: "100%", sm: "33%", md: 140, lg: 170 },
                 paddingTop: "20px",
               }}
             >
@@ -207,8 +208,9 @@ const Footer = () => {
             <ListItem
               nested
               sx={{
-                width: { xs: "50%", sm: "33%", md: 140, lg: 170 },
+                width: { xs: "100%", sm: "33%", md: 140, lg: 170 },
                 paddingTop: "20px",
+                order: { xs: 3 },
               }}
             >
               <ListItem
@@ -271,8 +273,9 @@ const Footer = () => {
             <ListItem
               nested
               sx={{
-                width: { xs: "50%", sm: "33%", md: 180, lg: 250 },
+                width: { xs: "100%", sm: "33%", md: 180, lg: 250 },
                 paddingTop: "20px",
+                order: { xs: 2 },
               }}
             >
               <ListItem
@@ -297,6 +300,7 @@ const Footer = () => {
                 sx={{
                   "--ListItemDecorator-size": "32px",
                   mr: { xs: "0", sm: "33%", md: "-5%", lg: "-5%" },
+                  margin: { xs: "auto" },
                 }}
               >
                 <ListItem

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
@@ -29,6 +29,9 @@ const data = [
   },
 ];
 const ProjectObjectivesCard = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Box
