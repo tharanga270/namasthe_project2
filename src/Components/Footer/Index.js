@@ -210,7 +210,7 @@ const Footer = () => {
               sx={{
                 width: { xs: "100%", sm: "33%", md: 140, lg: 170 },
                 paddingTop: "20px",
-                order: { xs: 3 },
+                order: { xs: 3, lg: 2, md: 2, sm: 2 },
               }}
             >
               <ListItem
@@ -275,7 +275,7 @@ const Footer = () => {
               sx={{
                 width: { xs: "100%", sm: "33%", md: 180, lg: 250 },
                 paddingTop: "20px",
-                order: { xs: 2 },
+                order: { xs: 2, lg: 3, md: 3, sm: 3 },
               }}
             >
               <ListItem
