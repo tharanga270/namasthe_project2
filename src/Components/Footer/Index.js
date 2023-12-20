@@ -10,6 +10,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
+import CardMedia from "@mui/material/CardMedia";
 const Footer = () => {
   return (
     <div>
@@ -33,11 +34,13 @@ const Footer = () => {
             marginRight: { lg: "4rem", md: "2rem", sm: "2rem", xs: 0 },
           }}
         >
-          <div
-            style={{
+          <Box
+            sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              paddingLeft: { xs: "30px", sm: "0", md: "0", lg: "0", xl: "0" },
+              paddingRight: { xs: "30px", sm: "0", md: "0", lg: "0", xl: "0" },
             }}
           >
             <img
@@ -46,7 +49,7 @@ const Footer = () => {
               height="180px"
               width="387px"
             />
-          </div>
+          </Box>
           <List
             size="sm"
             orientation="horizontal"
@@ -67,11 +70,74 @@ const Footer = () => {
               }}
             >
               <ListItem
-                sx={{ color: "#000", fontSize: "24px", fontWeight: "500" }}
+                sx={{
+                  color: "#000",
+                  fontSize: "24px",
+                  fontWeight: "500",
+                  display: {
+                    xs: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "flex",
+                    xl: "flex",
+                  },
+                  justifyContent: {
+                    xs: "center",
+                    sm: "flex-start",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  alignItems: {
+                    xs: "center",
+                    sm: "flex-start",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  ml: {
+                    xs: "0rem",
+                    sm: "4rem",
+                    md: "0",
+                    lg: "0",
+                    xl: "0",
+                  },
+                }}
               >
                 Links
               </ListItem>
-              <List>
+              <List
+                sx={{
+                  display: {
+                    xs: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "flex",
+                    xl: "flex",
+                  },
+                  justifyContent: {
+                    xs: "center",
+                    sm: "flex-start",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  alignItems: {
+                    xs: "center",
+                    sm: "flex-start",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  ml: {
+                    xs: "0rem",
+                    sm: "4rem",
+                    md: "0rem",
+                    lg: "0rem",
+                    xl: "0rem",
+                  },
+                }}
+              >
                 <Link to="/" style={{ textDecoration: "none" }}>
                   <ListItem>
                     <ListItem
@@ -150,11 +216,38 @@ const Footer = () => {
                   color: "#000",
                   fontSize: "24px",
                   fontWeight: "500",
+                  display: { xs: "flex" },
+                  justifyContent: {
+                    xs: "center",
+                    sm: "",
+                    md: "",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  },
+                  alignItems: {
+                    xs: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                    sm: "",
+                  },
                 }}
               >
                 Follow
               </ListItem>
-              <List>
+              <List
+                sx={{
+                  display: { xs: "flex" },
+                  // justifyContent: { xs: "center" },
+                  alignItems: {
+                    xs: "center",
+                    md: "flex-start",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                    sm: "",
+                  },
+                }}
+              >
                 <ListItem>
                   <a href="https://www.instagram.com/">
                     <InstagramIcon />
@@ -183,7 +276,20 @@ const Footer = () => {
               }}
             >
               <ListItem
-                sx={{ color: "#000", fontSize: "24px", fontWeight: "500" }}
+                sx={{
+                  color: "#000",
+                  fontSize: "24px",
+                  fontWeight: "500",
+                  display: { xs: "flex", sm: "flex" },
+                  justifyContent: {
+                    xs: "center",
+                    sm: "flex-start",
+                    md: "",
+                    lg: "",
+                    xl: "",
+                  },
+                  alignItems: { xs: "center", sm: "flex-start" },
+                }}
               >
                 Contact
               </ListItem>
@@ -193,7 +299,17 @@ const Footer = () => {
                   mr: { xs: "0", sm: "33%", md: "-5%", lg: "-5%" },
                 }}
               >
-                <ListItem>
+                <ListItem
+                  sx={{
+                    textAlign: {
+                      xs: "center",
+                      sm: "left",
+                      md: "",
+                      lg: "",
+                      xl: "",
+                    },
+                  }}
+                >
                   <p style={{ fontSize: "18px", fontWeight: 500 }}>
                     195M, 'Karlshue Court', <br />
                     Baseline Road, Colombo 09, <br />
