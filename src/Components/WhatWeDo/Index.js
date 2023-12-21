@@ -112,6 +112,7 @@ const WeDo = () => {
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
+                      mt: { lg: 0, md: 0, sm: 2, xs: 2 },
                     }}
                   >
                     {images.image1.text}
@@ -181,6 +182,7 @@ const WeDo = () => {
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
+                      mt: { lg: 0, md: 0, sm: 2, xs: 2 },
                     }}
                   >
                     {images.image3.text}
@@ -250,6 +252,7 @@ const WeDo = () => {
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
+                      mt: { lg: 0, md: 0, sm: 2, xs: 2 },
                     }}
                   >
                     {images.image4.text}
@@ -319,6 +322,7 @@ const WeDo = () => {
                       fontSize: "24px",
                       fontWeight: "300",
                       fontFamily: "Poppins, sans-serif",
+                      mt: { lg: 0, md: 0, sm: 2, xs: 2 },
                     }}
                   >
                     {images.image2.text}
