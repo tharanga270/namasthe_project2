@@ -20,6 +20,7 @@ import {
   yas,
   venura,
   abi,
+  vidusha,
 } from "../../config/Images/Images";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
@@ -142,7 +143,7 @@ const data = [
   },
   {
     id: 17,
-    image: aboutus1,
+    image: vidusha,
     name: "Vidusha",
     position: "Unknown",
     email: "Vidusha.namaste@gmail.com",

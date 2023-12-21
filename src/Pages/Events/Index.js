@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import EventLeftPaper from "../../Components/Events/Index";
 import EventRightPaper from "../../Components/Events/Index2";
 import EventRightPaper2 from "../../Components/Events/Index3";
 import EventLeftPaper2 from "../../Components/Events/Index4";
 import { Box } from "@mui/material";
 const Events = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Box

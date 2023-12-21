@@ -40,21 +40,22 @@ export const Team2 = require("../../Common/Assets/Images/team2.png");
 export const underconstruction = require("../../Common/Assets/Images/under-construction-2891888_1280.jpg");
 
 // SL Team
-export const asiri = require("../../Common/Assets/Images/asiri.png");
-export const raj = require("../../Common/Assets/Images/dr raj.png");
-export const chamika = require("../../Common/Assets/Images/chamika.png");
-export const hasuni = require("../../Common/Assets/Images/hasuni.png");
-export const heshali = require("../../Common/Assets/Images/heshali.png");
-export const poornima = require("../../Common/Assets/Images/madu.png");
-export const nethma = require("../../Common/Assets/Images/nethma.png");
-export const piumi = require("../../Common/Assets/Images/piyumi.png");
-export const rasika = require("../../Common/Assets/Images/rasika.png");
-export const sakuni = require("../../Common/Assets/Images/sakuni.png");
-export const shashini = require("../../Common/Assets/Images/professional photo.png");
-export const Shehara = require("../../Common/Assets/Images/shehara.png");
-export const yas = require("../../Common/Assets/Images/yashoda.png");
-export const abi = require("../../Common/Assets/Images/abi.png");
+export const asiri = require("../../Common/Assets/Images/asiri.jpg");
+export const raj = require("../../Common/Assets/Images/dr raj.jpg");
+export const chamika = require("../../Common/Assets/Images/chamika.jpg");
+export const hasuni = require("../../Common/Assets/Images/hasuni.jpg");
+export const heshali = require("../../Common/Assets/Images/heshali.jpg");
+export const poornima = require("../../Common/Assets/Images/madu.jpg");
+export const nethma = require("../../Common/Assets/Images/nethma.jpg");
+export const piumi = require("../../Common/Assets/Images/piyumi.jpg");
+export const rasika = require("../../Common/Assets/Images/rasika.jpg");
+export const sakuni = require("../../Common/Assets/Images/sakuni.jpg");
+export const shashini = require("../../Common/Assets/Images/professional photo.jpg");
+export const Shehara = require("../../Common/Assets/Images/shehara.jpg");
+export const yas = require("../../Common/Assets/Images/yashoda.jpg");
+export const abi = require("../../Common/Assets/Images/abi.jpg");
 export const venura = require("../../Common/Assets/Images/venura.png");
+export const vidusha = require("../../Common/Assets/Images/vidusha.jpg");
 
 export const laptopimg = require("../../Common/Assets/Images/About us-1.png");
 export const proobj = require("../../Common/Assets/Images/proobj.png");
