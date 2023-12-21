@@ -1,22 +1,22 @@
 import React from "react";
 import { Paper, Grid, Box, Typography } from "@mui/material";
-import { event3 } from "../../config/Images/Images";
-const EventRightPaper2 = () => {
+import { event1 } from "../../config/Images/Images";
+const EventLeftPaper2 = () => {
   return (
     <div>
       <Paper
         elevation={0}
         sx={{
-          background: "rgb(170, 122, 255)",
-          marginRight: {
+          background: "#8AAC77",
+          marginLeft: {
             xl: "10rem",
             lg: "9rem",
             md: "6rem",
             sm: "4rem",
             xs: "1px",
           },
-          borderTopRightRadius: "40px",
-          borderBottomRightRadius: "40px",
+          borderTopLeftRadius: "40px",
+          borderBottomLeftRadius: "40px",
           mb: 3,
           paddingTop: "20px ",
           paddingBottom: "20px",
@@ -40,7 +40,7 @@ const EventRightPaper2 = () => {
           container
           spacing={2}
           sx={{
-            paddingLeft: {
+            paddingRight: {
               xl: "2rem",
               lg: "2rem",
               md: "2rem",
@@ -51,37 +51,7 @@ const EventRightPaper2 = () => {
             paddingBottom: "2rem",
           }}
         >
-          <Grid
-            item
-            xs={12}
-            lg={6}
-            md={12}
-            sm={12}
-            xl={6}
-            sx={{ order: { md: 2, xs: 2, sm: 2 } }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
-                mt: { lg: "7rem", xl: "0", md: "0", xs: "0" },
-                mb: { lg: "7rem", xl: "0", md: "0", xs: "0" },
-              }}
-            >
-              <img src={event3} alt={event3} width="100%" />
-            </Box>
-          </Grid>{" "}
-          <Grid
-            item
-            xs={12}
-            lg={6}
-            md={12}
-            sm={12}
-            xl={6}
-            sx={{ order: { md: 1, xs: 1, sm: 1 } }}
-          >
+          <Grid item xs={12} lg={6} md={12} sm={12} xl={6}>
             <Box
               sx={{
                 display: "flex",
@@ -117,7 +87,7 @@ const EventRightPaper2 = () => {
                   },
                 }}
               >
-                ERC application
+                CAB meeting
               </Typography>
               <Typography
                 sx={{
@@ -145,9 +115,10 @@ const EventRightPaper2 = () => {
                   },
                 }}
               >
-                We submitted the proposal for work stream 4 on 31st March 2023
-                to the Sri Lanka Medical Association (SLMA) for the first
-                attempt and on 15th June 2023 for the 2nd attempt.
+                Apart from developing the toolkit, we created a Community
+                Advisory Board (CAB) with 12 members including parents who have
+                children with ASD, adults with ASD, and preschool teachers who
+                work with children with ASD and special needs.
               </Typography>
               <br />
               <Typography
@@ -167,7 +138,7 @@ const EventRightPaper2 = () => {
                     sm: "2rem",
                     xs: "0rem",
                   },
-                  // paddingRight: "2rem",
+
                   textAlign: {
                     xs: "center",
                     xl: "start",
@@ -177,12 +148,22 @@ const EventRightPaper2 = () => {
                   },
                 }}
               >
-                At the moment, we are waiting for the ERC approval from SLMA for
-                the WS4 proposal titled “Analysing the communication needs and
-                codesigning awareness material to enhance community awareness of
-                autism and intellectual disabilities: qualitative research
-                through community engagement and involvement (CEI)”
+                We conducted 2 CAB meetings; in May and October.
               </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={12} sm={12} xl={6}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+                mt: { lg: "7rem", xl: "0", md: "0", xs: "0" },
+                mb: { lg: "7rem", xl: "0", md: "0", xs: "0" },
+              }}
+            >
+              <img src={event1} alt={event1} width="100%" />
             </Box>
           </Grid>
         </Grid>
@@ -191,4 +172,4 @@ const EventRightPaper2 = () => {
   );
 };
 
-export default EventRightPaper2;
+export default EventLeftPaper2;

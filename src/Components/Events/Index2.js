@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper, Grid, Box, Typography } from "@mui/material";
-import image1 from "../../Common/Assets/Images/imag1.JPG";
+import { event1 } from "../../config/Images/Images";
 const EventRightPaper = () => {
   return (
     <div>
@@ -66,9 +66,11 @@ const EventRightPaper = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+                mt: { lg: "7rem", xl: "0", md: "0", xs: "0" },
+                mb: { lg: "7rem", xl: "0", md: "0", xs: "0" },
               }}
             >
-              <img src={image1} alt={image1} width="100%" />
+              <img src={event1} alt={event1} width="100%" />
             </Box>
           </Grid>{" "}
           <Grid
@@ -88,7 +90,7 @@ const EventRightPaper = () => {
                   lg: "47px",
                   md: "47px",
                   sm: "30px",
-                  xs: "27px",
+                  xs: "25px",
                 },
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
                 paddingLeft: {
@@ -112,7 +114,13 @@ const EventRightPaper = () => {
             <Typography
               sx={{
                 fontWeight: 500,
-                fontSize: "21px",
+                fontSize: {
+                  xl: "21px",
+                  lg: "21px",
+                  md: "21px",
+                  sm: "18px",
+                  xs: "15px",
+                },
                 paddingLeft: {
                   xl: "3rem",
                   lg: "3rem",
@@ -140,7 +148,13 @@ const EventRightPaper = () => {
             <Typography
               sx={{
                 fontWeight: 500,
-                fontSize: "21px",
+                fontSize: {
+                  xl: "21px",
+                  lg: "21px",
+                  md: "21px",
+                  sm: "18px",
+                  xs: "15px",
+                },
                 paddingLeft: {
                   xl: "3rem",
                   lg: "3rem",
