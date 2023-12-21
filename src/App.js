@@ -9,6 +9,7 @@ import Home from "./Pages/Home/Index";
 import NeedJoin from "./Pages/NeedToJoin/Index";
 import LearnMore from "./Pages/LearnMore/Index";
 import ProjectObjectives from "./Pages/ProjectObjectives/Index";
+import Events from "./Pages/Events/Index";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
         <Route path="/join" element={<NeedJoin />} />
         <Route path="/learn-more" element={<LearnMore />} />
         <Route path="/projectobj" element={<ProjectObjectives />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
       <Footer />
     </div>

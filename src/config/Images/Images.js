@@ -59,3 +59,7 @@ export const venura = require("../../Common/Assets/Images/venura.png");
 export const laptopimg = require("../../Common/Assets/Images/About us-1.png");
 export const proobj = require("../../Common/Assets/Images/proobj.png");
 export const withbaby = require("../../Common/Assets/Images/withbaby.png");
+
+export const event1 = require("../../Common/Assets/Images/imag1.JPG");
+export const event2 = require("../../Common/Assets/Images/img2.JPG");
+export const event3 = require("../../Common/Assets/Images/img3.JPG");
