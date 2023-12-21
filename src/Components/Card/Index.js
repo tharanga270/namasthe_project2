@@ -136,11 +136,7 @@ const ProjectCard = () => {
             <CardContent>
               <Box sx={{ display: "flex", justifyContent: "center", mb: 3 }}>
                 {/* Small Logo */}
-                <img
-                  src={projectcard2}
-                  alt="Small Logo"
-                  // style={{ alignItems: "center" }}
-                />
+                <img src={projectcard2} alt="Small Logo" />
               </Box>
 
               {/* Heading */}

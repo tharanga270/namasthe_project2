@@ -115,6 +115,7 @@ const EventRightPaper2 = () => {
                     md: "start",
                     sm: "start",
                   },
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 ERC application
@@ -143,6 +144,7 @@ const EventRightPaper2 = () => {
                     md: "start",
                     sm: "start",
                   },
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 We submitted the proposal for work stream 4 on 31st March 2023
@@ -167,7 +169,6 @@ const EventRightPaper2 = () => {
                     sm: "2rem",
                     xs: "0rem",
                   },
-                  // paddingRight: "2rem",
                   textAlign: {
                     xs: "center",
                     xl: "start",
@@ -175,6 +176,7 @@ const EventRightPaper2 = () => {
                     md: "start",
                     sm: "start",
                   },
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 At the moment, we are waiting for the ERC approval from SLMA for

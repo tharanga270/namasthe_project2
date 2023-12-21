@@ -77,6 +77,7 @@ const EventLeftPaper = () => {
                   md: "start",
                   sm: "start",
                 },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               User-testing workshops
@@ -105,6 +106,7 @@ const EventLeftPaper = () => {
                   md: "start",
                   sm: "start",
                 },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               According to the findings from the KIIs and codesign workshops,
@@ -130,7 +132,6 @@ const EventLeftPaper = () => {
                   sm: "2rem",
                   xs: "0rem",
                 },
-                // paddingRight: "2rem",
                 textAlign: {
                   xs: "center",
                   xl: "start",
@@ -138,6 +139,7 @@ const EventLeftPaper = () => {
                   md: "start",
                   sm: "start",
                 },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               There were 3 user-testing workshops; 1 for parents who have

@@ -85,6 +85,7 @@ const EventLeftPaper2 = () => {
                     md: "start",
                     sm: "start",
                   },
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 CAB meeting
@@ -113,6 +114,7 @@ const EventLeftPaper2 = () => {
                     md: "start",
                     sm: "start",
                   },
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Apart from developing the toolkit, we created a Community
@@ -146,6 +148,7 @@ const EventLeftPaper2 = () => {
                     md: "start",
                     sm: "start",
                   },
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 We conducted 2 CAB meetings; in May and October.

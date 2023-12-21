@@ -107,6 +107,7 @@ const EventRightPaper = () => {
                   md: "start",
                   sm: "start",
                 },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               Key-Informative Interviews (Klls) and co-design workshops
@@ -135,6 +136,7 @@ const EventRightPaper = () => {
                   md: "start",
                   sm: "start",
                 },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               The above activities were completed from 5th June to 8th June 2023
@@ -170,6 +172,7 @@ const EventRightPaper = () => {
                   md: "start",
                   sm: "start",
                 },
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               The interview guides were developed through scoping interviews
