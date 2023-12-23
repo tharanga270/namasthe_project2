@@ -10,6 +10,7 @@ import NeedJoin from "./Pages/NeedToJoin/Index";
 import LearnMore from "./Pages/LearnMore/Index";
 import ProjectObjectives from "./Pages/ProjectObjectives/Index";
 import Events from "./Pages/Events/Index";
+import Contact from "./Pages/Contact/Index";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route path="/learn-more" element={<LearnMore />} />
         <Route path="/projectobj" element={<ProjectObjectives />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/contacts" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

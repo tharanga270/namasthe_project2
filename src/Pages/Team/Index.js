@@ -17,6 +17,7 @@ const Team = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          fontFamily: "Poppins, sans-serif",
           mt: 4,
         }}
       >
@@ -82,7 +83,11 @@ const Team = () => {
                       variant="body1"
                       align="center"
                       mt={1}
-                      sx={{ fontWeight: "800", color: "purple" }}
+                      sx={{
+                        fontWeight: "900",
+                        color: "purple",
+                        fontFamily: "Poppins, sans-serif",
+                      }}
                     >
                       Global Team
                     </Typography>
@@ -143,7 +148,12 @@ const Team = () => {
                       align="center"
                       mt={1}
                       color="purple"
-                      sx={{ fontWeight: "800", color: "purple" }}
+                      sx={{
+                        fontWeight: "900",
+
+                        color: "purple",
+                        fontFamily: "Poppins, sans-serif",
+                      }}
                     >
                       Sri Lankan Team
                     </Typography>

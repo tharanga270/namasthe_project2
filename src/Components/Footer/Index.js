@@ -193,18 +193,20 @@ const Footer = () => {
                     </ListItem>
                   </ListItem>
                 </Link>
-                <ListItem>
-                  <ListItem
-                    sx={{
-                      color: "#454342",
-                      fontSize: "18px",
-                      fontWeight: "500",
-                      "&:hover": { cursor: "pointer" },
-                    }}
-                  >
-                    Contact
+                <Link to="/contacts" style={{ textDecoration: "none" }}>
+                  <ListItem>
+                    <ListItem
+                      sx={{
+                        color: "#454342",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        "&:hover": { cursor: "pointer" },
+                      }}
+                    >
+                      Contact
+                    </ListItem>
                   </ListItem>
-                </ListItem>
+                </Link>
               </List>
             </ListItem>
             <ListItem

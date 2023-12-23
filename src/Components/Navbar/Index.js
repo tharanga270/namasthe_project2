@@ -158,20 +158,22 @@ function NavList() {
             </ListItem>
           </Typography>
         </Link>
-        <Typography
-          as="a"
-          href="#"
-          variant="h5"
-          className="font-medium  text-green"
-          style={{ fontWeight: 600, marginLeft: "1rem" }}
-        >
-          <ListItem
-            className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
-            style={{ fontFamily: "Poppins, sans-serif" }}
+        <Link to="/contacts" style={{ textDecoration: "none" }}>
+          <Typography
+            as="a"
+            href="#"
+            variant="h5"
+            className="font-medium  text-green"
+            style={{ fontWeight: 600, marginLeft: "1rem" }}
           >
-            Contacts
-          </ListItem>
-        </Typography>
+            <ListItem
+              className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              Contacts
+            </ListItem>
+          </Typography>
+        </Link>
       </List>
     </Box>
   );
