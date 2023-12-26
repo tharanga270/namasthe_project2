@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { withbaby } from "../../config/Images/Images";
 import TextField from "@mui/material/TextField";
 import Radio from "@mui/material/Radio";
@@ -15,6 +15,10 @@ const NeedJoin = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setEmailError(!emailRegex.test(e.target.value));
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Typography
