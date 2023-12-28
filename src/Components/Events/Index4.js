@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Paper, Grid, Box, Typography } from "@mui/material";
 import { event1 } from "../../config/Images/Images";
+import { useSpring, animated } from "react-spring";
+
 const EventLeftPaper2 = () => {
+  const [isVisible, setVisible] = useState(false);
+  const ref = useRef(null);
+
+  const props = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateX(0)" : "translateX(-50px)",
+  });
+
+  const handleScroll = () => {
+    const top = ref.current.getBoundingClientRect().top;
+    const isVisible = top < window.innerHeight * 0.75;
+
+    setVisible(isVisible);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const AnimatedPaper = animated(Paper);
   return (
-    <div>
-      <Paper
+    <div ref={ref}>
+      <AnimatedPaper
+        style={props}
         elevation={0}
         sx={{
           background: "#8AAC77",
@@ -17,7 +43,7 @@ const EventLeftPaper2 = () => {
           },
           borderTopLeftRadius: "40px",
           borderBottomLeftRadius: "40px",
-          mb: 3,
+          mb: 7,
           paddingTop: "20px ",
           paddingBottom: "20px",
           paddingLeft: {
@@ -170,7 +196,7 @@ const EventLeftPaper2 = () => {
             </Box>
           </Grid>
         </Grid>
-      </Paper>
+      </AnimatedPaper>
     </div>
   );
 };
