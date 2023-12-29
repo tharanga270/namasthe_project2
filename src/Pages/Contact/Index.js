@@ -1,6 +1,6 @@
 import React from "react";
 import { contactus } from "../../config/Images/Images";
-import { Grid, Paper, Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 const Contact = () => {
