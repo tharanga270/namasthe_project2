@@ -1,5 +1,5 @@
 import Paper from "@mui/material/Paper";
-import { card1 } from "../../config/Images/Images";
+import { card1, card01 } from "../../config/Images/Images";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./style.css";
@@ -8,11 +8,12 @@ import { Card, CardBody, CardFooter } from "@material-tailwind/react";
 
 const cardData = [
   {
-    image: card1,
-    text: "where entrepreneurs can easily find the right design for their company. The book cover for us was a very important part of the success of the book. Therefore, we entrusted this to experts and ended up being very happy with the result.",
-    authors: "Val Racheeva + Maxi Knust",
-    location: "Co-authors, Germany",
+    image: card01,
+    text: "The project NAMASTE is an important project that will help families of children with Autism. In a developing country like SL the project will lead the path way to a more social model in accepting and including people with different abilities to build an inclusive society..",
+    authors: "Malathi Kahandaliyanage",
+    location: "Parent of an autistic child",
   },
+
   {
     image: card1,
     text: "where entrepreneurs can easily find the right design for their company. The book cover for us was a very important part of the success of the book. Therefore, we entrusted this to experts and ended up being very happy with the result.",
@@ -92,14 +93,31 @@ const CabCommunity = () => {
               justifyContent: "center",
               alignItems: "center",
               maxWidth: "100%",
+              border: "2px solid rgb(200, 122, 255)",
+              height: "550px",
             }}
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img src={data.image} alt={`card${index + 1}`} width="174" />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={data.image}
+                alt={`card${index + 1}`}
+                width="174"
+                style={{ borderRadius: "50%", objectFit: "cover" }}
+              />
             </div>
             <CardBody style={{ textAlign: "center" }}>
               <Typography
-                sx={{ fontSize: 16, fontWeight: 500, color: "#343434" }}
+                sx={{
+                  fontSize: 16,
+                  fontWeight: 500,
+                  color: "#343434",
+                  fontStyle: "italic",
+                }}
               >
                 {data.text}
               </Typography>
@@ -112,10 +130,24 @@ const CabCommunity = () => {
                   alignItems: "center",
                   fontSize: "16px",
                   fontStyle: "italic",
-                  fontWeight: 500,
+                  fontWeight: 800,
+                  color: "rgb(170, 122, 255)",
                 }}
               >
-                {data.authors} <br /> {data.location}
+                {data.authors}
+              </Typography>
+              <Typography
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  fontSize: "16px",
+                  fontStyle: "italic",
+                  fontWeight: 500,
+                  color: "#8AAC77",
+                }}
+              >
+                {data.location}
               </Typography>
             </CardFooter>
           </Card>

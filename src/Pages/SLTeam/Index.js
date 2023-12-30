@@ -144,8 +144,8 @@ const data = [
   {
     id: 17,
     image: vidusha,
-    name: "Vidusha",
-    position: "Unknown",
+    name: "Vidusha Thebuwana",
+    position: "Research Associate",
     email: "Vidusha.namaste@gmail.com",
   },
 ];

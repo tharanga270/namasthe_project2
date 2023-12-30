@@ -67,3 +67,11 @@ export const event3 = require("../../Common/Assets/Images/img3.JPG");
 
 export const family = require("../../Common/Assets/Images/withbaby.png");
 export const contactus = require("../../Common/Assets/Images/contactus.png");
+
+export const card01 = require("../../Common/Assets/Images/card1.png");
+
+export const gt1 = require("../../Common/Assets/Images/gt1.jpg");
+export const gt2 = require("../../Common/Assets/Images/gt2.jpg");
+export const gt3 = require("../../Common/Assets/Images/gt3.jpg");
+export const gt4 = require("../../Common/Assets/Images/gt4.jpg");
+export const gt5 = require("../../Common/Assets/Images/gt5.jpg");
