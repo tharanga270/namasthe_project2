@@ -4,33 +4,27 @@ import { event1 } from "../../config/Images/Images";
 import { useSpring, animated } from "react-spring";
 
 const EventRightPaper = () => {
-  const [isVisible, setVisible] = useState(false);
-  const ref = useRef(null);
-
-  const props = useSpring({
-    opacity: isVisible ? 1 : 0,
+  const ref = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+  const [animatedProps, setAnimatedProps] = useSpring(() => ({
+    opacity: 0,
     transform: isVisible ? "translateX(0)" : "translateX(-50px)",
-  });
-
-  const handleScroll = () => {
-    const top = ref.current.getBoundingClientRect().top;
-    const isVisible = top < window.innerHeight * 0.75;
-
-    setVisible(isVisible);
-  };
+    from: { opacity: 0, transform: "translateX(-100%)" },
+    to: { opacity: 1, transform: "translateX(0)" },
+    config: { duration: 1000 },
+  }));
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    if (ref.current) {
+      setIsVisible(true);
+    }
+  }, [setAnimatedProps]);
 
   const AnimatedPaper = animated(Paper);
   return (
     <div ref={ref}>
       <AnimatedPaper
-        style={props}
+        style={animatedProps}
         elevation={0}
         sx={{
           background: "rgb(170, 122, 255)",
