@@ -167,18 +167,20 @@ const Footer = () => {
                     </ListItem>
                   </ListItem>
                 </Link>
-                <ListItem>
-                  <ListItem
-                    sx={{
-                      color: "#454342",
-                      fontSize: "18px",
-                      fontWeight: "500",
-                      "&:hover": { cursor: "pointer" },
-                    }}
-                  >
-                    Resources
+                <Link to="/resources" style={{ textDecoration: "none" }}>
+                  <ListItem>
+                    <ListItem
+                      sx={{
+                        color: "#454342",
+                        fontSize: "18px",
+                        fontWeight: "500",
+                        "&:hover": { cursor: "pointer" },
+                      }}
+                    >
+                      Resources
+                    </ListItem>
                   </ListItem>
-                </ListItem>
+                </Link>
                 <Link to="/events" style={{ textDecoration: "none" }}>
                   <ListItem>
                     <ListItem

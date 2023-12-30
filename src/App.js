@@ -11,6 +11,7 @@ import LearnMore from "./Pages/LearnMore/Index";
 import ProjectObjectives from "./Pages/ProjectObjectives/Index";
 import Events from "./Pages/Events/Index";
 import Contact from "./Pages/Contact/Index";
+import Resources from "./Pages/Resources/Index";
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
         <Route path="/projectobj" element={<ProjectObjectives />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contacts" element={<Contact />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
     </div>

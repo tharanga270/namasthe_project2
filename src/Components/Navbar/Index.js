@@ -128,20 +128,22 @@ function NavList() {
           </Typography>
         </Link>
         <NavListMenu />
-        <Typography
-          as="a"
-          href="#"
-          variant="h5"
-          className="font-medium text-green"
-          style={{ fontWeight: 600, marginLeft: "1rem" }}
-        >
-          <ListItem
-            className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
-            style={{ fontFamily: "Poppins, sans-serif" }}
+        <Link to="/resources" style={{ textDecoration: "none" }}>
+          <Typography
+            as="a"
+            href="#"
+            variant="h5"
+            className="font-medium text-green"
+            style={{ fontWeight: 600, marginLeft: "1rem" }}
           >
-            Resources
-          </ListItem>
-        </Typography>
+            <ListItem
+              className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              Resources
+            </ListItem>
+          </Typography>
+        </Link>
         <Link to="/events" style={{ textDecoration: "none" }}>
           <Typography
             as="a"
