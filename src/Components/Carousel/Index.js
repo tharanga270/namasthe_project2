@@ -11,6 +11,15 @@ import Typography from "@mui/material/Typography";
 import "./style.css";
 const slideImages = [
   {
+    image: Carousel3,
+    content: {
+      heading: "NAMASTE Srilanka",
+
+      paragraph: "Neurodevelopment and Autism in South Asia:",
+      paragraph2: "Treatment and Evidence.",
+    },
+  },
+  {
     image: Carousel1,
     content: {
       heading: "NAMASTE Srilanka",
@@ -21,15 +30,6 @@ const slideImages = [
   },
   {
     image: Carousel2,
-    content: {
-      heading: "NAMASTE Srilanka",
-
-      paragraph: "Neurodevelopment and Autism in South Asia:",
-      paragraph2: "Treatment and Evidence.",
-    },
-  },
-  {
-    image: Carousel3,
     content: {
       heading: "NAMASTE Srilanka",
       paragraph: "Neurodevelopment and Autism in South Asia:",

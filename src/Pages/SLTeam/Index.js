@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import {
-  aboutus1,
   email,
   asiri,
   raj,
@@ -21,6 +20,7 @@ import {
   venura,
   abi,
   vidusha,
+  dilini,
 } from "../../config/Images/Images";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
@@ -35,9 +35,9 @@ const data = [
   },
   {
     id: 2,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: dilini,
+    name: "Dr. Dilini Vipulaguna",
+    position: "Principle Investigator",
     email: "dilvip777@yahoo.com",
   },
   {

@@ -5,7 +5,7 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 const Contact = () => {
   return (
-    <div>
+    <>
       <Typography
         variant="h3"
         gutterBottom
@@ -37,24 +37,29 @@ const Contact = () => {
           }}
         >
           <LocationOnRoundedIcon
-            sx={{ width: "70px", height: "70px", color: "#769863" }}
+            sx={{ width: "22px", height: "22px", color: "#769863" }}
           />
+          &nbsp;
           <Typography
             sx={{
               fontWeight: "500",
-              fontSize: {
-                xl: "25px",
-                lg: "25px",
-                md: "25px",
-                sm: "20px",
-                xs: "15px",
-              },
+              // fontSize: {
+              //   xl: "25px",
+              //   lg: "25px",
+              //   md: "25px",
+              //   sm: "20px",
+              //   xs: "15px",
+              // },
+              fontSize: "18px",
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
               fontFamily: "Poppins, sans-serif",
+              textAlign: "center",
             }}
           >
-            195M, 'Karlshue Court', <br />
-            Baseline Road, Colombo 09, Sri Lanka.
+            <Box sx={{ display: "flex", textAlign: "left" }}>
+              195M, 'Karlshue Court', <br />
+              Baseline Road, Colombo 09, Sri Lanka.
+            </Box>
           </Typography>
         </Box>
 
@@ -67,7 +72,7 @@ const Contact = () => {
           }}
         >
           <EmailRoundedIcon
-            sx={{ width: "70px", height: "70px", color: "#769863" }}
+            sx={{ width: "22px", height: "22px", color: "#769863" }}
           />
           <a
             href="mailto:info@namasthesl.com"
@@ -76,24 +81,26 @@ const Contact = () => {
             <Typography
               sx={{
                 fontWeight: "500",
-                fontSize: {
-                  xl: "25px",
-                  lg: "25px",
-                  md: "25px",
-                  sm: "20px",
-                  xs: "15px",
-                },
+                // fontSize: {
+                //   xl: "15px",
+                //   lg: "15px",
+                //   md: "25px",
+                //   sm: "20px",
+                //   xs: "15px",
+                // },
+                fontSize: "18px",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
                 fontFamily: "Poppins, sans-serif",
                 cursor: "pointer",
+                textAlign: "center",
               }}
             >
-              info@namasthesl.com
+              &nbsp; info@namasthesl.com
             </Typography>
           </a>
         </Box>
       </Box>
-    </div>
+    </>
   );
 };
 

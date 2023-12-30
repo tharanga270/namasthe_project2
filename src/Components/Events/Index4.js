@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Paper, Grid, Box, Typography } from "@mui/material";
-import { event1 } from "../../config/Images/Images";
+import { event4 } from "../../config/Images/Images";
 import { useSpring, animated } from "react-spring";
 
 const EventLeftPaper2 = () => {
@@ -192,7 +192,7 @@ const EventLeftPaper2 = () => {
                 mb: { lg: "7rem", xl: "0", md: "0", xs: "0" },
               }}
             >
-              <img src={event1} alt={event1} width="100%" />
+              <img src={event4} alt={event4} width="100%" />
             </Box>
           </Grid>
         </Grid>

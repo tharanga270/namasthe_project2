@@ -54,8 +54,9 @@ export const shashini = require("../../Common/Assets/Images/professional photo.j
 export const Shehara = require("../../Common/Assets/Images/shehara.jpg");
 export const yas = require("../../Common/Assets/Images/yashoda.jpg");
 export const abi = require("../../Common/Assets/Images/abi.jpg");
-export const venura = require("../../Common/Assets/Images/venura.png");
+export const venura = require("../../Common/Assets/Images/venura.jpg");
 export const vidusha = require("../../Common/Assets/Images/vidusha.jpg");
+export const dilini = require("../../Common/Assets/Images/dr dilini.jpg");
 
 export const laptopimg = require("../../Common/Assets/Images/About us-1.png");
 export const proobj = require("../../Common/Assets/Images/proobj.png");
@@ -64,6 +65,7 @@ export const withbaby = require("../../Common/Assets/Images/withbaby.png");
 export const event1 = require("../../Common/Assets/Images/imag1.JPG");
 export const event2 = require("../../Common/Assets/Images/img2.JPG");
 export const event3 = require("../../Common/Assets/Images/img3.JPG");
+export const event4 = require("../../Common/Assets/Images/event4.jpg");
 
 export const family = require("../../Common/Assets/Images/withbaby.png");
 export const contactus = require("../../Common/Assets/Images/contactus.png");
