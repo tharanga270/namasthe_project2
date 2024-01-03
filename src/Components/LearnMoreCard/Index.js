@@ -183,8 +183,9 @@ const LearnMoreCard = () => {
           }}
         >
           Dr Asiri Hewamalahe, Consultant Community Physician, Ministry of
-          Health, Sri Lanka and Dr Dilini Vipulaguna a community paediatrician,
-          who will together be leading the work in Sri Lanka are clear that
+          Health, Sri Lanka and Dr Dilini Vipulaguna, Consultant Community
+          Paediatrician, who will together be leading the work in Sri Lanka are
+          clear that
         </Typography>
         <br />
         <Typography

@@ -13,7 +13,7 @@ const slideImages = [
   {
     image: Carousel3,
     content: {
-      heading: "NAMASTE Srilanka",
+      heading: "NAMASTE Sri Lanka",
 
       paragraph: "Neurodevelopment and Autism in South Asia:",
       paragraph2: "Treatment and Evidence.",
@@ -22,7 +22,7 @@ const slideImages = [
   {
     image: Carousel1,
     content: {
-      heading: "NAMASTE Srilanka",
+      heading: "NAMASTE Sri Lanka",
 
       paragraph: "Neurodevelopment and Autism in South Asia:",
       paragraph2: "Treatment and Evidence.",
@@ -31,7 +31,7 @@ const slideImages = [
   {
     image: Carousel2,
     content: {
-      heading: "NAMASTE Srilanka",
+      heading: "NAMASTE Sri Lanka",
       paragraph: "Neurodevelopment and Autism in South Asia:",
       paragraph2: "Treatment and Evidence.",
     },

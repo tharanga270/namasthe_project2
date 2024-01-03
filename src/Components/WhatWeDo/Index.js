@@ -11,11 +11,11 @@ import "./style.css";
 import CardMedia from "@mui/material/CardMedia";
 const images = {
   image1: { image: detection1, text: " Detection workstream" },
-  image2: { image: intervention1, text: "Implementation workstream" },
+  image2: { image: intervention1, text: "Intervention workstream" },
   image3: { image: engagement1, text: "Capacity building workstream" },
   image4: {
     image: community1,
-    text: "Community Engagement and Inclusion workstream",
+    text: "Community Engagement and Involvement workstream",
   },
 };
 const WeDo = () => {
@@ -346,7 +346,7 @@ const WeDo = () => {
           fontFamily: "Poppins, sans-serif",
         }}
       >
-        CAB Community
+        Community Advisory Board Community
       </Typography>
     </div>
   );

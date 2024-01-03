@@ -95,7 +95,7 @@ const Contact = () => {
                 textAlign: "center",
               }}
             >
-              &nbsp; info@namasthesl.com
+              &nbsp; info@namastesl.com
             </Typography>
           </a>
         </Box>

@@ -27,8 +27,8 @@ const ProjectCard = () => {
               background: "#FFF",
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
-              width: "22rem",
-              height: "22rem",
+              width: "27rem",
+              height: "30rem",
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
@@ -85,9 +85,16 @@ const ProjectCard = () => {
                   fontFamily: "Poppins, sans-serif",
                 }}
               >
-                A £6.95 million Global Health Research Unit on Neurodevelopment
-                and Autism for children in South Asia is to launch with the help
-                of University of Manchester expertise.
+                NAMASTE builds on the decade-long collaboration between Sangath
+                (India) and the University of Manchester (UK) to implement a
+                novel integrated detection-care pathway for young children with
+                autism and their families in India, Sri Lanka and Nepal, using
+                non-specialist health workers. The project is a collaboration
+                between researchers at Manchester’s Social Development Research
+                Group, SANGATH India, Autism Care Nepal, the College of
+                Paediatrics Sri Lanka, Harvard Medical School, La Trobe
+                University, Kings College London, the World Health Organisation
+                (WHO) and Ummeed, Mumbai.
               </Typography>
 
               <Link to="/learn-more" className="learn_a">
@@ -115,8 +122,8 @@ const ProjectCard = () => {
               background: "#FFF",
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
-              width: "22rem",
-              height: "22rem",
+              width: "27rem",
+              height: "30rem",
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
@@ -167,12 +174,14 @@ const ProjectCard = () => {
                   fontFamily: "Poppins, sans-serif",
                 }}
               >
-                Most children with neurodevelopmental disabilities living in
-                South Asia have no access to services. This means that families
-                are not given the help they need to fully understand their
-                child’s needs and know how best to support them.
+                NAMASTE aims at developing and evaluating care pathways that
+                involve both screening and identification of neurodevelopmental
+                disability in children, followed by family-based supports to
+                help caregivers understand and support their child’s
+                development.
               </Typography>
-
+            </CardContent>
+            <CardContent sx={{ alignSelf: "flex-end", mt: 10 }}>
               <Link to="/projectobj" className="learn_a">
                 <p className="learn_p">Learn More</p>
               </Link>

@@ -9,6 +9,16 @@ import "./style.css";
 const data = [
   {
     id: 1,
+    image: gt5,
+    name: "Professor Jonathan Green",
+    position: "Principal Investigator",
+    description: "Lead investigator with overall responsibilities",
+    description1: " for the programme.",
+    // description2: "director for our client team. ",
+    email: "example@mail.com",
+  },
+  {
+    id: 2,
     image: gt1,
     name: "Dr Gauri Divan",
     position: "Joint Lead Applicant",
@@ -18,7 +28,7 @@ const data = [
     email: "example@mail.com",
   },
   {
-    id: 2,
+    id: 3,
     image: gt2,
     name: "Dr Kathy Leadbitter",
     position: "Co-applicant",
@@ -28,7 +38,7 @@ const data = [
     email: "example@mail.com",
   },
   {
-    id: 3,
+    id: 4,
     image: gt3,
     name: "Dr Richard Smallman",
     position: "Programme Manager",
@@ -38,22 +48,12 @@ const data = [
     email: "example@mail.com",
   },
   {
-    id: 4,
+    id: 5,
     image: gt4,
     name: "Dr Shruti Garg",
     position: "Co-applicant",
     description: "Lead investigator responsible for partner liaison ",
     description1: " and health system development. ",
-    // description2: "director for our client team. ",
-    email: "example@mail.com",
-  },
-  {
-    id: 5,
-    image: gt5,
-    name: "Professor Jonathan Green",
-    position: "Principal Investigator",
-    description: "Lead investigator with overall responsibilities",
-    description1: " for the programme.",
     // description2: "director for our client team. ",
     email: "example@mail.com",
   },
@@ -140,14 +140,16 @@ const GlobalTeam = () => {
                   <img
                     src={members.image}
                     alt={members.name}
-                    width="339px"
-                    height="512px"
+                    // width="339px"
+                    // height="512px"
                     style={{
                       borderRadius: "15px",
                       transition: "transform 0.3s",
                       // cursor: "pointer",
                       // transform:
                       //   zoomedIndex === index ? "scale(1.05)" : "scale(1)",
+                      width: "370px",
+                      height: "512px",
                     }}
                   />
                 </Box>

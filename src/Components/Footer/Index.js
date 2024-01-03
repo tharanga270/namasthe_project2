@@ -325,7 +325,7 @@ const Footer = () => {
                     Baseline Road, Colombo 09, <br />
                     Sri Lanka.
                     <a href="mailto:info@namasthesl.com">
-                      <p>info@namasthesl.com</p>
+                      <p>info@namastesl.com</p>
                     </a>
                   </p>
                 </ListItem>
