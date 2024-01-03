@@ -11,7 +11,7 @@ const cardData = [
     image: card01,
     text: "The project NAMASTE is an important project that will help families of children with Autism. In a developing country like SL the project will lead the path way to a more social model in accepting and including people with different abilities to build an inclusive society..",
     authors: "Malathi Kahandaliyanage",
-    location: "Parent of an autistic child",
+    location: "Parent of a child with autism",
   },
 
   {
