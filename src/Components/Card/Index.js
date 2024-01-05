@@ -28,7 +28,7 @@ const ProjectCard = () => {
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
               width: "27rem",
-              height: "30rem",
+              height: "26rem",
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
@@ -85,7 +85,7 @@ const ProjectCard = () => {
                   fontFamily: "Poppins, sans-serif",
                 }}
               >
-                NAMASTE builds on the decade-long collaboration between Sangath
+                {/* NAMASTE builds on the decade-long collaboration between Sangath
                 (India) and the University of Manchester (UK) to implement a
                 novel integrated detection-care pathway for young children with
                 autism and their families in India, Sri Lanka and Nepal, using
@@ -94,9 +94,15 @@ const ProjectCard = () => {
                 Group, SANGATH India, Autism Care Nepal, the College of
                 Paediatrics Sri Lanka, Harvard Medical School, La Trobe
                 University, Kings College London, the World Health Organisation
-                (WHO) and Ummeed, Mumbai.
+                (WHO) and Ummeed, Mumbai. */}
+                NAMASTE builds on the decade-long collaboration between Sangath
+                (India) and the University of Manchester (UK) to implement a
+                novel integrated detection-care pathway for young children with
+                autism and their families in India, <br /> Sri Lanka and Nepal,
+                using non-specialist health workers.
               </Typography>
-
+            </CardContent>
+            <CardContent sx={{ alignSelf: "flex-end", mt: 2 }}>
               <Link to="/learn-more" className="learn_a">
                 <p className="learn_p">Learn More</p>
               </Link>
@@ -123,7 +129,7 @@ const ProjectCard = () => {
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
               width: "27rem",
-              height: "30rem",
+              height: "26rem",
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
@@ -181,7 +187,7 @@ const ProjectCard = () => {
                 development.
               </Typography>
             </CardContent>
-            <CardContent sx={{ alignSelf: "flex-end", mt: 10 }}>
+            <CardContent sx={{ alignSelf: "flex-end", mt: 2 }}>
               <Link to="/projectobj" className="learn_a">
                 <p className="learn_p">Learn More</p>
               </Link>
