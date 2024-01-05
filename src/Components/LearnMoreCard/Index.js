@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./style.css";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { laptopimg } from "../../config/Images/Images";
+// import { laptopimg } from "../../config/Images/Images";
 
 const LearnMoreCard = () => {
   useEffect(() => {
@@ -199,6 +199,7 @@ const LearnMoreCard = () => {
               sm: "22px",
               xs: "20px",
             },
+            mb: 5,
           }}
         >
           "Namaste will complement the existing system of early detection and
@@ -209,7 +210,7 @@ const LearnMoreCard = () => {
           'Namaste' is indeed a blessing".
         </Typography>
       </div>
-      <div
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -237,7 +238,7 @@ const LearnMoreCard = () => {
             }}
           />
         </div>
-      </div>
+      </div> */}
     </Box>
   );
 };
