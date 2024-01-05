@@ -17,9 +17,9 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
-import { namastheLogo } from "../../config/Images/Images";
+import { namastheLogo, Rectangle1 } from "../../config/Images/Images";
 import { Link } from "react-router-dom";
-import { Box } from "@mui/material";
+import { Box, CardMedia } from "@mui/material";
 const navListMenuItems = [
   {
     title: "Our Team",
@@ -187,7 +187,7 @@ export function NavbarWithMegaMenu() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
+      () => window.innerWidth >= 1140 && setOpenNav(false)
     );
   }, []);
 
@@ -199,25 +199,73 @@ export function NavbarWithMegaMenu() {
           href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          style={{ marginLeft: "6.5rem" }}
+          style={{ marginLeft: "1rem" }}
         >
-          <img src={namastheLogo} alt="namastheLogo" />
+          <CardMedia
+            component="img"
+            // height="194"
+            image={namastheLogo}
+            alt={namastheLogo}
+          />
+          {/* <img src={namastheLogo} alt="namastheLogo" /> */}
         </Typography>
-        <div className="hidden lg:block flex-grow">
-          <NavList />
-        </div>
-        <IconButton
-          variant="text"
-          color="blue-gray"
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
+        <div
+          className="hidden lg:block flex-grow justify-center"
+          // style={{ marginRight: "7rem" }}
         >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
+          <Box
+            sx={{
+              mr: {
+                xl: "10rem",
+                lg: "2rem",
+                md: "1rem",
+                sm: "4rem",
+                xs: "2rem",
+              },
+            }}
+          >
+            <NavList />
+          </Box>
+        </div>
+        <div className="flex items-center">
+          {/* <img
+            src={Rectangle1}
+            alt="RightImage"
+            // className="ml-4"
+            width="120px"
+            height="105px"
+            style={{ marginRight: "1rem" }}
+          /> */}
+
+          <CardMedia
+            component="img"
+            image={Rectangle1}
+            alt={Rectangle1}
+            sx={{
+              height: {
+                xl: "105px",
+                lg: "105px",
+                md: "105px",
+                sm: "105px",
+                xs: "80px",
+              },
+              width: "120px",
+            }}
+          />
+
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            className="lg:hidden"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
+        </div>
       </div>
       <Collapse open={openNav}>
         <NavList />
