@@ -3,7 +3,7 @@ import "./style.css";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-import { proobj } from "../../config/Images/Images";
+// import { proobj } from "../../config/Images/Images";
 import { Box } from "@mui/material";
 const data = [
   {
@@ -122,9 +122,9 @@ const ProjectObjectivesCard = () => {
           ))}
         </Grid>
       </Box>
-      <div className="projectObj_footer">
+      {/* <div className="projectObj_footer">
         <img src={proobj} alt="proobj" />
-      </div>
+      </div> */}
     </div>
   );
 };
