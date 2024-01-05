@@ -84,6 +84,7 @@ const ProjectObjectivesCard = () => {
                     md: "290px",
                     sm: "250px",
                     xs: "290px",
+                    mb: 5,
                   },
 
                   mt: 2,
