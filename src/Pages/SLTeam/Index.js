@@ -244,12 +244,12 @@ const SLTeam = () => {
                       // cursor: "pointer",
                       // transform:
                       //   zoomedIndex === index ? "scale(1.05)" : "scale(1)",
-                      width: "310px",
-                      height: "512px",
+                      // width: "310px",
+                      // height: "512px",
                     }}
                     // Trigger zoom on image click
-                    // width="339px"
-                    // height="512px"
+                    width="339px"
+                    height="512px"
                   />
                 </Box>
 

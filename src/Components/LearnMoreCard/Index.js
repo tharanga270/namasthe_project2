@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./style.css";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-// import { laptopimg } from "../../config/Images/Images";
+import { project2 } from "../../config/Images/Images";
 
 const LearnMoreCard = () => {
   useEffect(() => {
@@ -210,7 +210,7 @@ const LearnMoreCard = () => {
           'Namaste' is indeed a blessing".
         </Typography>
       </div>
-      {/* <div
+      <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -218,27 +218,16 @@ const LearnMoreCard = () => {
           position: "relative",
         }}
       >
-        <div
-        //   style={{
-        //     position: "absolute",
-        //     width: "650px",
-        //     height: "650px",
-        //     borderRadius: "50%",
-        //     backgroundColor: "purple",
-        //     zIndex: -1,
-        //   }}
-        >
-          <img
-            src={laptopimg}
-            alt="laptopimg"
-            // width="650px"
-            // height="650px"
-            style={{
-              zIndex: 1,
-            }}
-          />
-        </div>
-      </div> */}
+        <img
+          src={project2}
+          alt="project2"
+          // width="650px"
+          // height="650px"
+          style={{
+            zIndex: 1,
+          }}
+        />
+      </div>
     </Box>
   );
 };

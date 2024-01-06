@@ -298,7 +298,22 @@ const NeedJoin = () => {
             </Grid>
           </form>
         </Paper>
-      </Box>{" "}
+      </Box>
+      <Typography
+        gutterBottom
+        sx={{
+          fontWeight: 600,
+          textAlign: "center",
+          fontSize: "20px",
+          fontFamily: "Poppins, sans-serif",
+          color: "red",
+          mb: 7,
+          mt: 7,
+        }}
+      >
+        If you are a parent of a child with autism or an adult with autism
+        interested in joining our community, apply here
+      </Typography>
       <Box
         sx={{
           display: "flex",
