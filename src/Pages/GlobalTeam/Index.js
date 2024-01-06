@@ -59,33 +59,33 @@ const data = [
   },
 ];
 const GlobalTeam = () => {
-  const [zoomedIndex, setZoomedIndex] = useState(null);
-  const zoomedImageRef = useRef(null);
+  // const [zoomedIndex, setZoomedIndex] = useState(null);
+  // const zoomedImageRef = useRef(null);
 
-  const handleImageClick = (index) => {
-    setZoomedIndex(index);
-  };
+  // const handleImageClick = (index) => {
+  //   setZoomedIndex(index);
+  // };
 
-  const handleCloseZoom = () => {
-    setZoomedIndex(null);
-  };
+  // const handleCloseZoom = () => {
+  //   setZoomedIndex(null);
+  // };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        zoomedImageRef.current &&
-        !zoomedImageRef.current.contains(event.target)
-      ) {
-        handleCloseZoom();
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (
+  //       zoomedImageRef.current &&
+  //       !zoomedImageRef.current.contains(event.target)
+  //     ) {
+  //       handleCloseZoom();
+  //     }
+  //   };
 
-    document.body.addEventListener("click", handleClickOutside);
+  //   document.body.addEventListener("click", handleClickOutside);
 
-    return () => {
-      document.body.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, []);
 
   return (
     <div>
@@ -130,13 +130,14 @@ const GlobalTeam = () => {
               }}
             >
               <div
-                ref={zoomedIndex === index ? zoomedImageRef : null}
+                className="global_card"
+                // ref={zoomedIndex === index ? zoomedImageRef : null}
                 style={{
                   cursor: "pointer",
-                  transform: zoomedIndex === index ? "scale(1.05)" : "scale(1)",
+                  // transform: zoomedIndex === index ? "scale(1.05)" : "scale(1)",
                 }}
               >
-                <Box marginBottom="4px" onClick={() => handleImageClick(index)}>
+                <Box marginBottom="4px">
                   <img
                     src={members.image}
                     alt={members.name}
@@ -184,7 +185,6 @@ const GlobalTeam = () => {
                     {members.description1}
                     <br />
                     {members.description2}
-                    <br />
                   </p>
                   <a href={`mailto:${members.email}`}>
                     <IconButton className="global_IconButton">

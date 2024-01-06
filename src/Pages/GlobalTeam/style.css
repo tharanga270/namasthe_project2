@@ -1,3 +1,12 @@
 .global_IconButton:hover {
   background-color: transparent;
 }
+
+.global_card {
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.global_card:hover {
+  transform: scale(1.03);
+}

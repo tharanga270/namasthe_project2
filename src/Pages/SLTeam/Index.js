@@ -151,33 +151,33 @@ const data = [
 ];
 
 const SLTeam = () => {
-  const [zoomedIndex, setZoomedIndex] = useState(null);
-  const zoomedImageRef = useRef(null);
+  // const [zoomedIndex, setZoomedIndex] = useState(null);
+  // const zoomedImageRef = useRef(null);
 
-  const handleImageClick = (index) => {
-    setZoomedIndex(index);
-  };
+  // const handleImageClick = (index) => {
+  //   setZoomedIndex(index);
+  // };
 
-  const handleCloseZoom = () => {
-    setZoomedIndex(null);
-  };
+  // const handleCloseZoom = () => {
+  //   setZoomedIndex(null);
+  // };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        zoomedImageRef.current &&
-        !zoomedImageRef.current.contains(event.target)
-      ) {
-        handleCloseZoom();
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (
+  //       zoomedImageRef.current &&
+  //       !zoomedImageRef.current.contains(event.target)
+  //     ) {
+  //       handleCloseZoom();
+  //     }
+  //   };
 
-    document.body.addEventListener("click", handleClickOutside);
+  //   document.body.addEventListener("click", handleClickOutside);
 
-    return () => {
-      document.body.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, []);
 
   return (
     <div>
@@ -228,13 +228,19 @@ const SLTeam = () => {
               }}
             >
               <div
-                ref={zoomedIndex === index ? zoomedImageRef : null}
-                style={{
-                  cursor: "pointer",
-                  transform: zoomedIndex === index ? "scale(1.05)" : "scale(1)",
-                }}
+                className="slteam_card"
+                // ref={zoomedIndex === index ? zoomedImageRef : null}
               >
-                <Box marginBottom="4px" onClick={() => handleImageClick(index)}>
+                <Box
+                  marginBottom="4px"
+                  // sx={{
+                  //   cursor: "pointer",
+                  //   transition: "transform 0.3s",
+                  //   "&:hover": {
+                  //     transform: "scale(1.05)",
+                  //   },
+                  // }}
+                >
                   <img
                     src={member.image}
                     alt={member.name}

@@ -88,7 +88,6 @@ const ProjectObjectivesCard = () => {
                   },
 
                   mt: 2,
-                  // height: "270px",
                   width: "600px",
                   borderRadius: "15px",
                   backgroundColor:
