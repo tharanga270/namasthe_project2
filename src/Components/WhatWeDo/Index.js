@@ -346,7 +346,7 @@ const WeDo = () => {
           fontFamily: "Poppins, sans-serif",
         }}
       >
-        Community Advisory Board Community
+        Community Advisory Board
       </Typography>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -59,34 +59,6 @@ const data = [
   },
 ];
 const GlobalTeam = () => {
-  // const [zoomedIndex, setZoomedIndex] = useState(null);
-  // const zoomedImageRef = useRef(null);
-
-  // const handleImageClick = (index) => {
-  //   setZoomedIndex(index);
-  // };
-
-  // const handleCloseZoom = () => {
-  //   setZoomedIndex(null);
-  // };
-
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (
-  //       zoomedImageRef.current &&
-  //       !zoomedImageRef.current.contains(event.target)
-  //     ) {
-  //       handleCloseZoom();
-  //     }
-  //   };
-
-  //   document.body.addEventListener("click", handleClickOutside);
-
-  //   return () => {
-  //     document.body.removeEventListener("click", handleClickOutside);
-  //   };
-  // }, []);
-
   return (
     <div>
       <Typography
@@ -131,24 +103,17 @@ const GlobalTeam = () => {
             >
               <div
                 className="global_card"
-                // ref={zoomedIndex === index ? zoomedImageRef : null}
                 style={{
                   cursor: "pointer",
-                  // transform: zoomedIndex === index ? "scale(1.05)" : "scale(1)",
                 }}
               >
                 <Box marginBottom="4px">
                   <img
                     src={members.image}
                     alt={members.name}
-                    // width="339px"
-                    // height="512px"
                     style={{
                       borderRadius: "15px",
                       transition: "transform 0.3s",
-                      // cursor: "pointer",
-                      // transform:
-                      //   zoomedIndex === index ? "scale(1.05)" : "scale(1)",
                       width: "370px",
                       height: "512px",
                     }}
@@ -175,7 +140,6 @@ const GlobalTeam = () => {
                   </p>
                   <p
                     style={{
-                      //   fontWeight: "500",
                       fontSize: "16px",
                       color: "#474747",
                     }}

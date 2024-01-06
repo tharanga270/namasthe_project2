@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -151,34 +151,6 @@ const data = [
 ];
 
 const SLTeam = () => {
-  // const [zoomedIndex, setZoomedIndex] = useState(null);
-  // const zoomedImageRef = useRef(null);
-
-  // const handleImageClick = (index) => {
-  //   setZoomedIndex(index);
-  // };
-
-  // const handleCloseZoom = () => {
-  //   setZoomedIndex(null);
-  // };
-
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (
-  //       zoomedImageRef.current &&
-  //       !zoomedImageRef.current.contains(event.target)
-  //     ) {
-  //       handleCloseZoom();
-  //     }
-  //   };
-
-  //   document.body.addEventListener("click", handleClickOutside);
-
-  //   return () => {
-  //     document.body.removeEventListener("click", handleClickOutside);
-  //   };
-  // }, []);
-
   return (
     <div>
       <Typography
@@ -227,33 +199,15 @@ const SLTeam = () => {
                 alignItem: "center",
               }}
             >
-              <div
-                className="slteam_card"
-                // ref={zoomedIndex === index ? zoomedImageRef : null}
-              >
-                <Box
-                  marginBottom="4px"
-                  // sx={{
-                  //   cursor: "pointer",
-                  //   transition: "transform 0.3s",
-                  //   "&:hover": {
-                  //     transform: "scale(1.05)",
-                  //   },
-                  // }}
-                >
+              <div className="slteam_card">
+                <Box marginBottom="4px">
                   <img
                     src={member.image}
                     alt={member.name}
                     style={{
                       borderRadius: "15px",
                       transition: "transform 0.3s",
-                      // cursor: "pointer",
-                      // transform:
-                      //   zoomedIndex === index ? "scale(1.05)" : "scale(1)",
-                      // width: "310px",
-                      // height: "512px",
                     }}
-                    // Trigger zoom on image click
                     width="339px"
                     height="512px"
                   />
