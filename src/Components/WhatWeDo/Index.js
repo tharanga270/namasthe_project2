@@ -133,7 +133,7 @@ const WeDo = () => {
                   lg: "flex-start",
                   sm: "center",
                 },
-                mb: { xs: "2rem", sm: "2rem", lg: "0", md: "0" },
+                mb: { xs: "3rem", sm: "2rem", lg: "0", md: "0" },
               }}
             >
               <Box
@@ -203,7 +203,7 @@ const WeDo = () => {
                   lg: "flex-start",
                   sm: "center",
                 },
-                mb: { xs: "2rem", sm: "2rem", lg: "0", md: "0" },
+                mb: { xs: "5rem", sm: "2rem", lg: "0", md: "0" },
               }}
             >
               <Box

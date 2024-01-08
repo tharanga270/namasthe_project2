@@ -17,7 +17,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
-import { namastheLogo, Rectangle1 } from "../../config/Images/Images";
+import { namastheLogo } from "../../config/Images/Images";
 import { Link } from "react-router-dom";
 import { Box, CardMedia } from "@mui/material";
 const navListMenuItems = [
@@ -199,60 +199,29 @@ export function NavbarWithMegaMenu() {
           href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          style={{ marginLeft: "1rem" }}
-        >
-          <CardMedia
-            component="img"
-            // height="194"
-            image={namastheLogo}
-            alt={namastheLogo}
-          />
-          {/* <img src={namastheLogo} alt="namastheLogo" /> */}
-        </Typography>
-        <div
-          className="hidden lg:block flex-grow justify-center"
-          // style={{ marginRight: "7rem" }}
         >
           <Box
             sx={{
-              mr: {
-                xl: "10rem",
-                lg: "2rem",
-                md: "1rem",
-                sm: "4rem",
-                xs: "2rem",
+              marginLeft: {
+                xl: "3rem",
+                lg: "3rem",
+                md: "0rem",
+                sm: "2rem",
+                xs: "1rem",
               },
             }}
           >
-            <NavList />
+            <CardMedia
+              component="img"
+              image={namastheLogo}
+              alt={namastheLogo}
+            />{" "}
           </Box>
+        </Typography>
+        <div className="hidden lg:block flex-grow justify-center">
+          <NavList />
         </div>
         <div className="flex items-center">
-          {/* <img
-            src={Rectangle1}
-            alt="RightImage"
-            // className="ml-4"
-            width="120px"
-            height="105px"
-            style={{ marginRight: "1rem" }}
-          /> */}
-
-          <CardMedia
-            component="img"
-            image={Rectangle1}
-            alt={Rectangle1}
-            sx={{
-              height: {
-                xl: "105px",
-                lg: "105px",
-                md: "105px",
-                sm: "105px",
-                xs: "80px",
-              },
-              width: "120px",
-            }}
-          />
-
           <IconButton
             variant="text"
             color="blue-gray"

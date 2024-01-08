@@ -54,9 +54,14 @@ const CabCommunity = () => {
       slidesToSlide: 4,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 640 },
       items: 2,
       slidesToSlide: 2,
+    },
+    tablet2: {
+      breakpoint: { max: 640, min: 464 },
+      items: 1,
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -73,15 +78,15 @@ const CabCommunity = () => {
         ml: { lg: "6rem", md: "2rem", sm: 0, xs: 0 },
         mr: { lg: "6rem", md: "2rem", sm: 0, xs: 0 },
         p: 2,
+        mt: "10%",
       }}
-      style={{ marginTop: "10%" }}
     >
       <Carousel
         responsive={responsive}
         autoPlay={true}
         autoPlaySpeed={5000}
         infinite={true}
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        removeArrowOnDeviceType={["tablet", "tablet2", "mobile", "desktop"]}
         containerClass="carousel-container"
       >
         {cardData.map((data, index) => (
@@ -95,6 +100,7 @@ const CabCommunity = () => {
               maxWidth: "100%",
               border: "2px solid rgb(200, 122, 255)",
               height: "550px",
+              margin: "auto",
             }}
           >
             <div
