@@ -333,6 +333,12 @@ const Footer = () => {
             </ListItem>
           </List>
         </Box>
+        <Box textAlign="center" mt={4}>
+          <hr style={{ width: "50%", borderColor: "grey", margin: "auto" }} />
+          <p style={{ fontSize: "18px", marginTop: "8px" }}>
+            Copyright &copy; 2024 Namaste Srilanka. All rights reserved.
+          </p>
+        </Box>
       </Sheet>
     </div>
   );
