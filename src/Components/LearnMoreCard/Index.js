@@ -46,9 +46,11 @@ const LearnMoreCard = () => {
             },
           }}
         >
-          A £6.95 million Global Health Research Unit on Neurodevelopment and
-          Autism for children in South Asia is to launch with the help of
-          University of Manchester expertise.
+          NAMASTE builds on the decade-long collaboration between Sangath
+          (India) and the University of Manchester (UK) to implement a novel
+          integrated detection-care pathway for young children with autism and
+          their families in India, Sri Lanka and Nepal, using
+          non-specialist health workers.
         </Typography>
         <br />
         <Typography

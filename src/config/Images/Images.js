@@ -57,6 +57,7 @@ export const abi = require("../../Common/Assets/Images/abi.jpg");
 export const venura = require("../../Common/Assets/Images/venura.jpg");
 export const vidusha = require("../../Common/Assets/Images/vidusha.jpg");
 export const dilini = require("../../Common/Assets/Images/dr dilini.jpg");
+export const ayendre = require("../../Common/Assets/Images/aysha-Untitled design (1).jpg");
 
 export const laptopimg = require("../../Common/Assets/Images/About us-1.png");
 export const proobj = require("../../Common/Assets/Images/proobj.png");
@@ -71,6 +72,7 @@ export const family = require("../../Common/Assets/Images/withbaby.png");
 export const contactus = require("../../Common/Assets/Images/contactus.png");
 
 export const card01 = require("../../Common/Assets/Images/card1.png");
+export const card02 = require("../../Common/Assets/Images/croprounded1.jpg");
 
 export const gt1 = require("../../Common/Assets/Images/gt1.jpg");
 export const gt2 = require("../../Common/Assets/Images/gt2.jpg");
