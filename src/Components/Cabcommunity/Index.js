@@ -138,7 +138,7 @@ const CabCommunity = () => {
               >
                 {expandedCardIndex === index || index === 0 || index === 2
                   ? data.text2
-                  : `${data.text2.slice(0, 100)}...`}
+                  : `${data.text2.slice(0, 79)}...`}
               </Typography>
             </CardBody>
             {index === 1 && (
