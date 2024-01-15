@@ -324,7 +324,7 @@ const Footer = () => {
                     195M, 'Karlshue Court', <br />
                     Baseline Road, Colombo 09, <br />
                     Sri Lanka.
-                    <a href="mailto:info@namasthesl.com">
+                    <a href="mailto:info@namastesl.com">
                       <p>info@namastesl.com</p>
                     </a>
                   </p>

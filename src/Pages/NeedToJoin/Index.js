@@ -17,9 +17,9 @@ import Swal from "sweetalert2";
 import "./style.css";
 
 const NeedJoin = () => {
-  const YOUR_SERVICE_ID = "service_4bhx3f3";
-  const YOUR_TEMPLATE_ID = "template_qpf9lzn";
-  const YOUR_PUBLIC_ID = "EOtEPRGTBteW_eBrM";
+  const YOUR_SERVICE_ID = "service_3la10rb";
+  const YOUR_TEMPLATE_ID = "template_bwl1w5d";
+  const YOUR_PUBLIC_ID = "cqy_Q9FVpV5vnFlpZ";
 
   const form = useRef();
 
