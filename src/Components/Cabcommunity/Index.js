@@ -80,7 +80,7 @@ const CabCommunity = () => {
       <Carousel
         responsive={responsive}
         autoPlay={true}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={10000}
         infinite={true}
         removeArrowOnDeviceType={["tablet", "tablet2", "mobile", "desktop"]}
         containerClass="carousel-container"

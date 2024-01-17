@@ -4,6 +4,9 @@ import {
   Rectangle3,
   Rectangle4,
   Rectangle1,
+  Rectangle5,
+  Rectangle6,
+  Rectangle7,
 } from "../../config/Images/Images";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -24,6 +27,15 @@ const cardData = [
   },
   {
     image: Rectangle1,
+  },
+  {
+    image: Rectangle5,
+  },
+  {
+    image: Rectangle6,
+  },
+  {
+    image: Rectangle7,
   },
 ];
 
@@ -59,7 +71,6 @@ const FooterCarousel = () => {
         autoPlay={true}
         autoPlaySpeed={3000}
         infinite={true}
-        Infinite
         mode={true}
         Auto
         play
@@ -68,7 +79,7 @@ const FooterCarousel = () => {
         containerClass="carousel-container"
         // customTransition="transform 500ms ease-in"
         customTransition="transform 500ms ease-in"
-        transitionDuration={500}
+        // transitionDuration={500}
       >
         {cardData.map((data, index) => (
           <div

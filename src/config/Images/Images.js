@@ -25,6 +25,9 @@ export const Rectangle1 = require("../../Common/Assets/Images/Rectangle__3_-remo
 export const Rectangle2 = require("../../Common/Assets/Images/Rectangle__4_-removebg-preview.png");
 export const Rectangle3 = require("../../Common/Assets/Images/Rectangle__5_-removebg-preview.png");
 export const Rectangle4 = require("../../Common/Assets/Images/Rectangle-removebg-preview.png");
+export const Rectangle5 = require("../../Common/Assets/Images/FC1.png");
+export const Rectangle6 = require("../../Common/Assets/Images/FC2.png");
+export const Rectangle7 = require("../../Common/Assets/Images/FC3.png");
 
 export const projectcard1 = require("../../Common/Assets/Images/Clip path group.png");
 export const gif = require("../../Common/Assets/Images/Untitled design.gif");

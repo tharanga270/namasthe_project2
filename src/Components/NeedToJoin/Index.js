@@ -20,7 +20,7 @@ const NeedToJoin = () => {
               onMouseLeave={() => setIsHovered(false)}
               style={hoverStyles}
             >
-              Want to join ?
+              Want to join Community Advisory Board ?
             </span>
           </Link>
         </h4>

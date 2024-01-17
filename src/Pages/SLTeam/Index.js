@@ -110,7 +110,7 @@ const data = [
     id: 12,
     image: sakuni,
     name: "Sakuni Hingurangala",
-    position: "Direction coordinator",
+    position: "Detection Coordinator",
     email: "sakunisevwadi@gmail.com",
   },
 
