@@ -12,15 +12,11 @@ import {
   Typography,
   FormHelperText,
 } from "@mui/material";
-import emailjs from "@emailjs/browser";
+import axios from "axios";
 import Swal from "sweetalert2";
 import "./style.css";
 
 const NeedJoin = () => {
-  const YOUR_SERVICE_ID = "service_3la10rb";
-  const YOUR_TEMPLATE_ID = "template_bwl1w5d";
-  const YOUR_PUBLIC_ID = "cqy_Q9FVpV5vnFlpZ";
-
   const form = useRef();
 
   const [name, setName] = React.useState("");
@@ -35,7 +31,7 @@ const NeedJoin = () => {
   const [contactNoError, setContactNoError] = useState(false);
   const [addressError, setAddressError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!name.trim()) {
@@ -71,55 +67,70 @@ const NeedJoin = () => {
       return;
     }
 
-    const templateParams = {
-      from_name: name,
-      from_email: emailAccess,
-      from_gender: gender,
-      contact_number: contactNo,
-      address: address,
-    };
+    try {
+      const response = await axios.post("http://localhost:5000/sendEmail", {
+        name: name,
+        email: emailAccess,
+        gender: gender,
+        contactno: contactNo,
+        address: address,
+      });
 
-    emailjs
-      .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
-      .then(
-        (response) => {
-          Swal.fire({
-            icon: "success",
-            title: "Success",
-            toast: true,
-            position: "top-end",
-            iconColor: "white",
-            customClass: {
-              popup: "colored-toast",
-            },
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            didOpen: () => {
-              setName("");
-              setEmailAccess("");
-              setGender("");
-              setContactNo("");
-              setAddress("");
-            },
-          });
+      if (response.status === 200) {
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          toast: true,
+          position: "top-end",
+          iconColor: "white",
+          customClass: {
+            popup: "colored-toast",
+          },
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: () => {
+            setName("");
+            setEmailAccess("");
+            setGender("");
+            setContactNo("");
+            setAddress("");
+          },
+        });
+      } else {
+        console.error("Non-200 status:", response.status);
+
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          toast: true,
+          position: "top-end",
+          iconColor: "white",
+          customClass: {
+            popup: "colored-toast",
+          },
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        toast: true,
+        position: "top-end",
+        iconColor: "white",
+        customClass: {
+          popup: "colored-toast",
         },
-        (response) => {
-          Swal.fire({
-            icon: "error",
-            title: "Error",
-            toast: true,
-            position: "top-end",
-            iconColor: "white",
-            customClass: {
-              popup: "colored-toast",
-            },
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-          });
-        }
-      );
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+      });
+    }
   };
 
   useEffect(() => {
@@ -169,7 +180,7 @@ const NeedJoin = () => {
             },
           }}
         >
-          <form ref={form} onSubmit={handleSubmit}>
+          <form ref={form}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
                 <label className="label">Name</label>
@@ -291,6 +302,7 @@ const NeedJoin = () => {
                   color="success"
                   sx={{ fontSize: "20px", ml: 2, mt: 4, borderRadius: "10px" }}
                   type="submit"
+                  onClick={handleSubmit}
                 >
                   Send
                 </Button>
