@@ -8,11 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/sendEmail",
-      "dest": "Server.js",
-      "methods": ["POST"]
-    },
-    {
       "src": "/(.*)",
       "dest": "Server.js"
     }

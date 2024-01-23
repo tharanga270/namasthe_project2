@@ -30,7 +30,7 @@ const NeedJoin = () => {
   const [genderError, setGenderError] = useState(false);
   const [contactNoError, setContactNoError] = useState(false);
   const [addressError, setAddressError] = useState(false);
-  axios.defaults.withCredentials = true;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -68,16 +68,13 @@ const NeedJoin = () => {
     }
 
     try {
-      const response = await axios.post(
-        "https://namaste-api-sezl.vercel.app/sendEmail",
-        {
-          name: name,
-          email: emailAccess,
-          gender: gender,
-          contactno: contactNo,
-          address: address,
-        }
-      );
+      const response = await axios.post("http://localhost:5000/sendEmail", {
+        name: name,
+        email: emailAccess,
+        gender: gender,
+        contactno: contactNo,
+        address: address,
+      });
 
       if (response.status === 200) {
         Swal.fire({
