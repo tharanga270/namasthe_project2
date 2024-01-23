@@ -68,13 +68,16 @@ const NeedJoin = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/sendEmail", {
-        name: name,
-        email: emailAccess,
-        gender: gender,
-        contactno: contactNo,
-        address: address,
-      });
+      const response = await axios.post(
+        "https://namaste-server3-d67c.vercel.app/sendEmail",
+        {
+          name: name,
+          email: emailAccess,
+          gender: gender,
+          contactno: contactNo,
+          address: address,
+        }
+      );
 
       if (response.status === 200) {
         Swal.fire({
