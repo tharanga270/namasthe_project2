@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: [""],
+    origin: ["https://namasthe-project2-lbl5.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
