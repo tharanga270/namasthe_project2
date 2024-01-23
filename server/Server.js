@@ -13,14 +13,20 @@ const port = process.env.MAIN_PORT || 5001;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(
-  cors({
-    origin: ["https://namasthe-project2-lbl5.vercel.app"],
-    methods: ["POST"],
-    credentials: true,
-  })
-);
-app.use(express.json());
+app.use(cors());
+// comes inside cors
+// app.use(
+//   cors({
+//     origin: ["https://namasthe-project2-lbl5.vercel.app"],
+//     methods: ["POST", "GET"],
+//     credentials: true,
+//   })
+// );
+// app.use(express.json());
+
+// app.get("/", (req, res) => {
+//   res.json("API is Working");
+// });
 
 app.post("/sendEmail", async (req, res) => {
   try {
