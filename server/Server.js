@@ -16,10 +16,14 @@ app.use(bodyParser.json());
 app.use(
   cors({
     origin: ["https://namasthe-project2-lbl5.vercel.app"],
-    methods: ["POST"],
+    methods: ["POST", "GET"],
     credentials: true,
   })
 );
+
+app.get("/home", (req, res) => {
+  res.status(200).json("Welcome, your app is working well");
+});
 
 app.post("/sendEmail", async (req, res) => {
   try {
