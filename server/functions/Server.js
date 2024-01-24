@@ -18,7 +18,7 @@ app.use(
     app.use(
       cors({
         origin: ["https://namasthe-project2-lbl5.vercel.app"],
-        methods: ["POST", "GET"],
+        methods: ["POST"],
         credentials: true,
       })
     )
