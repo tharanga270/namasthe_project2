@@ -8,8 +8,10 @@
   ],
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/:splat"
+      "source": "/api/(.*)",   
+      "destination": "/api/:splat",  
+      "has": {
+        "type": "application/json"  
     }
   ]
 }
