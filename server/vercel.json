@@ -5,15 +5,5 @@
       "src": "/server/Server.js",
       "use": "@vercel/node"
     }
-  ],
-  "routes": [
-    {
-      "src": "/sendEmail",
-      "dest": "/server/Server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server/Server.js"
-    }
   ]
 }
