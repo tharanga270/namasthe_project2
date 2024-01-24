@@ -6,12 +6,14 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",   
-      "destination": "/api/:splat",  
-      "has": {
-        "type": "application/json"  
+      "src": "/sendEmail",
+      "dest": "server/Server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "server/Server.js"
     }
   ]
 }
