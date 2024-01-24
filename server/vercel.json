@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/Server.js",
+      "src": "/server/Server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/sendEmail",
-      "dest": "server/Server.js"
+      "dest": "/server/Server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "server/Server.js"
+      "dest": "/server/Server.js"
     }
   ]
 }
