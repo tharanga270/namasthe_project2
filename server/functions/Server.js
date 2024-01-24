@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
 require("dotenv").config();
-
+const serverless = require("serverless-http");
 const app = express();
 const port = process.env.MAIN_PORT || 5001;
 
@@ -147,3 +147,5 @@ async function sendEmail({ to, subject, text, attachment }) {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+module.exports.handler = serverless(app);
