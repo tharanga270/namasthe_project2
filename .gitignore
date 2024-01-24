@@ -42,3 +42,5 @@ test.js
 17-1-build.rar
 test2.js
 23-1-build.rar
+# Local Netlify folder
+.netlify
