@@ -56,12 +56,13 @@ const Autism = () => {
           className="autism_Typography"
           sx={{
             fontSize: {
-              xl: "40px",
-              lg: "40px",
-              md: "39px",
-              sm: "34px",
-              xs: "34px",
+              xl: "70px",
+              lg: "70px",
+              md: "50px",
+              sm: "40px",
+              xs: "40px",
             },
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           What is "Autism" ?
