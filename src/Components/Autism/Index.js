@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Paper,
-  Typography,
-
-  Box,
-} from "@mui/material";
+import { Paper, Typography, Box } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import { project4, project5 } from "../../config/Images/Images";
 import "./style.css";
@@ -26,9 +21,6 @@ const autoismData = [
   },
 ];
 const Autism = () => {
-
-
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -136,8 +128,7 @@ const Autism = () => {
                       sm: "25px",
                       xs: "20px",
                     },
-                    color:
-                      index === 0 ? "green" : index === 1 ? "blue" : "black",
+                    color: "green",
                   }}
                 >
                   {data.text1}
