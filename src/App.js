@@ -17,7 +17,6 @@ function App() {
     <div className="App">
       <NavbarWithMegaMenu />
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
         <Route path="*" element={<Home />} />
         <Route path="/team" element={<Team />} />
         <Route path="/global" element={<GlobalTeam />} />

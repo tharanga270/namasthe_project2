@@ -5,120 +5,267 @@ import {
   Grid,
   useMediaQuery,
   useTheme,
+  Box,
 } from "@mui/material";
-import { group2 } from "../../config/Images/Images";
-import { group1 } from "../../config/Images/Images";
+import Carousel from "react-multi-carousel";
+import { group1, group2, project4, project5 } from "../../config/Images/Images";
 import "./style.css";
 
+const autoismData = [
+  {
+    id: 1,
+    image: project4,
+    text1:
+      "Autism might mean having a unique perspective on the world, seeing and feeling things differently. It's their way, which can be a thing of beauty. It could be a superpower, enabling them to see the world's splendor from a whole new angle!",
+    text2: "-Parent of an autistic child-",
+  },
+  {
+    id: 2,
+    image: project5,
+    text1:
+      "Autism – also referred to as autism spectrum disorder – constitutes a diverse group of conditions related to the development of the brain. Characteristics may be detected in early childhood, but autism is often not diagnosed until much later.",
+    text2: " -World Health Organization-",
+  },
+];
 const Autism = () => {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 640 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 640, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
+
   return (
-    <div className="autism_body">
-      <Paper
-        elevation={0}
-        sx={{
-          p: "20px",
-          //   m: "10rem",
-          textAlign: "center",
-          position: "relative",
-          mt: "5rem",
-          ml: { lg: "10rem", xs: "0rem" },
-          mr: { lg: "10rem", xs: "0rem" },
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItem: "center",
+          marginTop: "10%",
         }}
       >
-        {!isSmallScreen && (
-          <Grid
-            container
-            justifyContent="flex-end"
-            alignItems="flex-start"
-            style={{
-              position: "absolute",
-              top: "0",
-              right: "0",
-              paddingTop: "10px",
-              paddingRight: "10px",
-            }}
-          >
-            <img src={group1} alt="" />
-          </Grid>
-        )}
+        <Typography
+          alignItems="center"
+          variant="h4"
+          gutterBottom
+          className="autism_Typography"
+          sx={{
+            fontSize: {
+              xl: "40px",
+              lg: "40px",
+              md: "39px",
+              sm: "34px",
+              xs: "34px",
+            },
+          }}
+        >
+          What is "Autism" ?
+        </Typography>
+      </div>
+      <Box
+        sx={{
+          maxWidth: "150rem",
+          p: 2,
+          mt: "2%",
+        }}
+      >
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          autoPlaySpeed={10000}
+          infinite={true}
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          containerClass="carousel-container"
+        >
+          {autoismData.map((data, index) => (
+            <Paper
+              elevation={0}
+              sx={{
+                ml: { lg: "10rem", xs: "0rem" },
+                mr: { lg: "10rem", xs: "0rem" },
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img src={data.image} alt={`card${index + 1}`} />
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                <Typography
+                  className="autism_Typography2"
+                  variant="body1"
+                  paragraph
+                  sx={{
+                    ml: {
+                      lg: "4rem",
+                      md: "3rem",
+                    },
+                    mr: {
+                      lg: "4rem",
+                      md: "3rem",
+                    },
 
-        <Grid container direction="column" spacing={2}>
-          <Grid item>
-            <Typography
-              alignItems="center"
-              variant="h4"
-              gutterBottom
-              className="autism_Typography"
+                    fontSize: {
+                      xl: "30px",
+                      lg: "30px",
+                      md: "29px",
+                      sm: "25px",
+                      xs: "20px",
+                    },
+                    color:
+                      index === 0 ? "green" : index === 1 ? "blue" : "black",
+                  }}
+                >
+                  {data.text1}
+                </Typography>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography
+                  className="autism_who"
+                  variant="body1"
+                  paragraph
+                  sx={{
+                    ml: {
+                      lg: "4rem",
+                      md: "3rem",
+                    },
+                    mr: {
+                      lg: "4rem",
+                      md: "3rem",
+                    },
+                  }}
+                >
+                  {data.text2}
+                </Typography>
+              </div>
+            </Paper>
+          ))}
+          <div className="autism_body">
+            <Paper
+              elevation={0}
               sx={{
-                fontSize: {
-                  xl: "40px",
-                  lg: "40px",
-                  md: "39px",
-                  sm: "34px",
-                  xs: "34px",
-                },
+                p: "15px",
+                textAlign: "center",
+                position: "relative",
+                mt: "6rem",
+                ml: { lg: "10rem", xs: "0rem" },
+                mr: { lg: "10rem", xs: "0rem" },
               }}
             >
-              What is "Autism"
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography
-              className="autism_Typography2"
-              variant="body1"
-              paragraph
-              sx={{
-                ml: {
-                  lg: "4rem",
-                  md: "3rem",
-                },
-                mr: {
-                  lg: "4rem",
-                  md: "3rem",
-                },
+              {!isSmallScreen && (
+                <Grid
+                  container
+                  justifyContent="flex-end"
+                  alignItems="flex-start"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    right: "0",
+                    marginTop: "-6%",
+                  }}
+                >
+                  <img src={group1} alt={group1} />
+                </Grid>
+              )}
 
-                fontSize: {
-                  xl: "30px",
-                  lg: "30px",
-                  md: "29px",
-                  sm: "27px",
-                  xs: "23px",
-                },
-              }}
-            >
-              Autism – also referred to as autism spectrum disorder –
-              constitutes a diverse group of conditions related to the
-              development of the brain. Characteristics may be detected in early
-              childhood, but autism is often not diagnosed until much later.
-            </Typography>
-            <Typography
-              className="autism_who"
-              variant="body1"
-              paragraph
-              sx={{
-                ml: {
-                  lg: "4rem",
-                  md: "3rem",
-                },
-                mr: {
-                  lg: "4rem",
-                  md: "3rem",
-                },
-              }}
-            >
-              -World Health Organization-
-            </Typography>
-            {!isSmallScreen && (
-              <Grid container justifyContent="flex-start" alignItems="flex-end">
-                <img src={group2} alt="" />
+              <Grid container direction="column" spacing={2}>
+                <Grid item>
+                  <Typography
+                    className="autism_Typography2"
+                    variant="body1"
+                    paragraph
+                    sx={{
+                      ml: {
+                        lg: "4rem",
+                        md: "3rem",
+                      },
+                      mr: {
+                        lg: "4rem",
+                        md: "3rem",
+                      },
+
+                      fontSize: {
+                        xl: "30px",
+                        lg: "30px",
+                        md: "29px",
+                        sm: "25px",
+                        xs: "21px",
+                      },
+                    }}
+                  >
+                    Autism – also referred to as autism spectrum disorder –
+                    constitutes a diverse group of conditions related to the
+                    development of the brain. Characteristics may be detected in
+                    early childhood, but autism is often not diagnosed until
+                    much later.
+                  </Typography>
+                  <Typography
+                    className="autism_who"
+                    variant="body1"
+                    paragraph
+                    sx={{
+                      ml: {
+                        lg: "4rem",
+                        md: "3rem",
+                      },
+                      mr: {
+                        lg: "4rem",
+                        md: "3rem",
+                      },
+                    }}
+                  >
+                    -World Health Organization-
+                  </Typography>
+                  {!isSmallScreen && (
+                    <Grid
+                      container
+                      justifyContent="flex-start"
+                      alignItems="flex-end"
+                    >
+                      <div style={{ marginTop: "-40px" }}>
+                        <img src={group2} alt={group2} />
+                      </div>
+                    </Grid>
+                  )}
+                </Grid>
               </Grid>
-            )}
-          </Grid>
-        </Grid>
-      </Paper>
-    </div>
+            </Paper>
+          </div>
+        </Carousel>
+      </Box>
+    </>
   );
 };
 

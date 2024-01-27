@@ -85,3 +85,6 @@ export const gt5 = require("../../Common/Assets/Images/gt5.jpg");
 
 export const project2 = require("../../Common/Assets/Images/project2.png");
 export const project3 = require("../../Common/Assets/Images/project3.png");
+
+export const project4 = require("../../Common/Assets/Images/Namasthe_Project_-_UI_ss_1_-removebg-preview.png");
+export const project5 = require("../../Common/Assets/Images/Namasthe_Project_s-_UI-removebg-preview.png");
