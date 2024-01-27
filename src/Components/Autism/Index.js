@@ -2,13 +2,11 @@ import React from "react";
 import {
   Paper,
   Typography,
-  Grid,
-  useMediaQuery,
-  useTheme,
+
   Box,
 } from "@mui/material";
 import Carousel from "react-multi-carousel";
-import { group1, group2, project4, project5 } from "../../config/Images/Images";
+import { project4, project5 } from "../../config/Images/Images";
 import "./style.css";
 
 const autoismData = [
@@ -28,8 +26,8 @@ const autoismData = [
   },
 ];
 const Autism = () => {
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+
 
   const responsive = {
     desktop: {
@@ -172,97 +170,7 @@ const Autism = () => {
               </div>
             </Paper>
           ))}
-          <div className="autism_body">
-            <Paper
-              elevation={0}
-              sx={{
-                p: "15px",
-                textAlign: "center",
-                position: "relative",
-                mt: "6rem",
-                ml: { lg: "10rem", xs: "0rem" },
-                mr: { lg: "10rem", xs: "0rem" },
-              }}
-            >
-              {!isSmallScreen && (
-                <Grid
-                  container
-                  justifyContent="flex-end"
-                  alignItems="flex-start"
-                  style={{
-                    position: "absolute",
-                    top: "0",
-                    right: "0",
-                    marginTop: "-6%",
-                  }}
-                >
-                  <img src={group1} alt={group1} />
-                </Grid>
-              )}
-
-              <Grid container direction="column" spacing={2}>
-                <Grid item>
-                  <Typography
-                    className="autism_Typography2"
-                    variant="body1"
-                    paragraph
-                    sx={{
-                      ml: {
-                        lg: "4rem",
-                        md: "3rem",
-                      },
-                      mr: {
-                        lg: "4rem",
-                        md: "3rem",
-                      },
-
-                      fontSize: {
-                        xl: "30px",
-                        lg: "30px",
-                        md: "29px",
-                        sm: "25px",
-                        xs: "21px",
-                      },
-                    }}
-                  >
-                    Autism – also referred to as autism spectrum disorder –
-                    constitutes a diverse group of conditions related to the
-                    development of the brain. Characteristics may be detected in
-                    early childhood, but autism is often not diagnosed until
-                    much later.
-                  </Typography>
-                  <Typography
-                    className="autism_who"
-                    variant="body1"
-                    paragraph
-                    sx={{
-                      ml: {
-                        lg: "4rem",
-                        md: "3rem",
-                      },
-                      mr: {
-                        lg: "4rem",
-                        md: "3rem",
-                      },
-                    }}
-                  >
-                    -World Health Organization-
-                  </Typography>
-                  {!isSmallScreen && (
-                    <Grid
-                      container
-                      justifyContent="flex-start"
-                      alignItems="flex-end"
-                    >
-                      <div style={{ marginTop: "-40px" }}>
-                        <img src={group2} alt={group2} />
-                      </div>
-                    </Grid>
-                  )}
-                </Grid>
-              </Grid>
-            </Paper>
-          </div>
+          {/* #2 content come here */}
         </Carousel>
       </Box>
     </>
