@@ -1,12 +1,8 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
 import { Carousel1, Carousel2, Carousel3 } from "../../config/Images/Images";
-// import Carousel1 from "../../Common/Assets/Images/Property1.svg";
-// import Carousel2 from "../../Common/Assets/Images/Property2.svg";
-// import Carousel3 from "../../Common/Assets/Images/Property3.svg";
 import Box from "@mui/material/Box";
 import ProjectCard from "../Card/Index";
-// import { Typography } from "@material-tailwind/react";
 import Typography from "@mui/material/Typography";
 import "./style.css";
 const slideImages = [

@@ -6,7 +6,7 @@ export const linkedin = require("../../Common/Assets/Images/linkedin.png");
 
 // Carousel
 export const Carousel1 = require("../../Common/Assets/Images/Property1.png");
-export const Carousel2 = require("../../Common/Assets/Images/Property2.png");
+export const Carousel2 = require("../../Common/Assets/Images/3rd picture.png");
 export const Carousel3 = require("../../Common/Assets/Images/Property3.png");
 
 export const card1 = require("../../Common/Assets/Images/Copy of About us (6) 4.png");

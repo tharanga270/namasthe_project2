@@ -114,18 +114,18 @@ const Autism = () => {
                   paragraph
                   sx={{
                     ml: {
-                      lg: "4rem",
-                      md: "3rem",
+                      lg: "5rem",
+                      md: "4rem",
                     },
                     mr: {
-                      lg: "4rem",
-                      md: "3rem",
+                      lg: "5rem",
+                      md: "4rem",
                     },
 
                     fontSize: {
-                      xl: "30px",
-                      lg: "30px",
-                      md: "29px",
+                      xl: "28px",
+                      lg: "28px",
+                      md: "25px",
                       sm: "25px",
                       xs: "20px",
                     },
