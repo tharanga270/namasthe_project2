@@ -114,8 +114,14 @@ const GlobalTeam = () => {
                     style={{
                       borderRadius: "15px",
                       transition: "transform 0.3s",
-                      width: "430px",
-                      height: "512px",
+                      width:
+                        members.id === 1 || members.id === 2 || members.id === 4
+                          ? "460px"
+                          : "370px",
+                      height:
+                        members.id === 1 || members.id === 2 || members.id === 4
+                          ? "512px"
+                          : "512px",
                     }}
                   />
                 </Box>
