@@ -2,14 +2,14 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import { gt1, gt2, gt3, gt4, gt5, email } from "../../config/Images/Images";
+import { gt6, gt2, gt7, gt4, gt8, email } from "../../config/Images/Images";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import "./style.css";
 const data = [
   {
     id: 1,
-    image: gt5,
+    image: gt8,
     name: "Professor Jonathan Green",
     position: "Principal Investigator",
     description: "Lead investigator with overall responsibilities",
@@ -19,7 +19,7 @@ const data = [
   },
   {
     id: 2,
-    image: gt1,
+    image: gt6,
     name: "Dr Gauri Divan",
     position: "Joint Lead Applicant",
     description: "Co-PI and lead investigator in India, ",
@@ -39,7 +39,7 @@ const data = [
   },
   {
     id: 4,
-    image: gt3,
+    image: gt7,
     name: "Dr Richard Smallman",
     position: "Programme Manager",
     description: "Lead investigator responsible for capacity building,",
@@ -114,7 +114,7 @@ const GlobalTeam = () => {
                     style={{
                       borderRadius: "15px",
                       transition: "transform 0.3s",
-                      width: "370px",
+                      width: "430px",
                       height: "512px",
                     }}
                   />

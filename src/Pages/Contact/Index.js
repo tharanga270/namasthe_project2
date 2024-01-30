@@ -43,13 +43,6 @@ const Contact = () => {
           <Typography
             sx={{
               fontWeight: "500",
-              // fontSize: {
-              //   xl: "25px",
-              //   lg: "25px",
-              //   md: "25px",
-              //   sm: "20px",
-              //   xs: "15px",
-              // },
               fontSize: "18px",
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
               fontFamily: "Poppins, sans-serif",
@@ -81,13 +74,6 @@ const Contact = () => {
             <Typography
               sx={{
                 fontWeight: "500",
-                // fontSize: {
-                //   xl: "15px",
-                //   lg: "15px",
-                //   md: "25px",
-                //   sm: "20px",
-                //   xs: "15px",
-                // },
                 fontSize: "18px",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
                 fontFamily: "Poppins, sans-serif",

@@ -82,6 +82,9 @@ export const gt2 = require("../../Common/Assets/Images/gt2.jpg");
 export const gt3 = require("../../Common/Assets/Images/gt3.jpg");
 export const gt4 = require("../../Common/Assets/Images/gt4.jpg");
 export const gt5 = require("../../Common/Assets/Images/gt5.jpg");
+export const gt6 = require("../../Common/Assets/Images/gt6.jpg");
+export const gt7 = require("../../Common/Assets/Images/gt7.jpg");
+export const gt8 = require("../../Common/Assets/Images/gt8.jpg");
 
 export const project2 = require("../../Common/Assets/Images/project2.png");
 export const project3 = require("../../Common/Assets/Images/project3.png");
