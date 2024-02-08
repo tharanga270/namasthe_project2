@@ -6,20 +6,6 @@ import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 const Contact = () => {
   return (
     <>
-      <Typography
-        variant="h3"
-        gutterBottom
-        sx={{
-          fontWeight: 600,
-          textAlign: "center",
-          mb: 7,
-          mt: 7,
-          fontSize: "60px",
-          fontFamily: "Poppins, sans-serif",
-        }}
-      >
-        Contact Us
-      </Typography>
       <img src={contactus} alt={contactus} />
       <Box
         sx={{

@@ -137,20 +137,22 @@ const NeedJoin = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <>
       <Typography
-        variant="h3"
         gutterBottom
         sx={{
           fontWeight: 600,
           textAlign: "center",
+          fontSize: "31px",
+          fontFamily: "Poppins, sans-serif",
+          color: "red",
           mb: 7,
           mt: 7,
-          fontSize: "60px",
-          fontFamily: "Poppins, sans-serif",
         }}
       >
-        Application
+        If you are a parent of a child with autism or an adult with autism
+        interested in joining our community,
+        <div> apply here </div>
       </Typography>
       <Box
         sx={{
@@ -311,21 +313,7 @@ const NeedJoin = () => {
           </form>
         </Paper>
       </Box>
-      <Typography
-        gutterBottom
-        sx={{
-          fontWeight: 600,
-          textAlign: "center",
-          fontSize: "20px",
-          fontFamily: "Poppins, sans-serif",
-          color: "red",
-          mb: 7,
-          mt: 7,
-        }}
-      >
-        If you are a parent of a child with autism or an adult with autism
-        interested in joining our community, apply here
-      </Typography>
+
       <Box
         sx={{
           display: "flex",
@@ -342,7 +330,7 @@ const NeedJoin = () => {
         <img src={withbaby} alt={withbaby} style={{ width: "550px" }} />
       </Box>
       <br />
-    </div>
+    </>
   );
 };
 
