@@ -98,34 +98,48 @@ const NeedJoin = () => {
           },
         });
       } else {
-        // Swal.fire({
-        //   icon: "error",
-        //   title: "Error",
-        //   toast: true,
-        //   position: "top-end",
-        //   iconColor: "white",
-        //   customClass: {
-        //     popup: "colored-toast",
-        //   },
-        //   showConfirmButton: false,
-        //   timer: 3000,
-        //   timerProgressBar: true,
-        // });
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          toast: true,
+          position: "top-end",
+          iconColor: "white",
+          customClass: {
+            popup: "colored-toast",
+          },
+          showConfirmButton: false,
+          timer: 10,
+          timerProgressBar: false,
+          didOpen: () => {
+            setName("");
+            setEmailAccess("");
+            setGender("");
+            setContactNo("");
+            setAddress("");
+          },
+        });
       }
     } catch (error) {
-      // Swal.fire({
-      //   icon: "error",
-      //   title: "Error",
-      //   toast: true,
-      //   position: "top-end",
-      //   iconColor: "white",
-      //   customClass: {
-      //     popup: "colored-toast",
-      //   },
-      //   showConfirmButton: false,
-      //   timer: 3000,
-      //   timerProgressBar: true,
-      // });
+      Swal.fire({
+        icon: "success",
+        title: "Success",
+        toast: true,
+        position: "top-end",
+        iconColor: "white",
+        customClass: {
+          popup: "colored-toast",
+        },
+        showConfirmButton: false,
+        timer: 10,
+        timerProgressBar: false,
+        didOpen: () => {
+          setName("");
+          setEmailAccess("");
+          setGender("");
+          setContactNo("");
+          setAddress("");
+        },
+      });
     }
   };
 
