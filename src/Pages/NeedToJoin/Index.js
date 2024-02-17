@@ -98,38 +98,34 @@ const NeedJoin = () => {
           },
         });
       } else {
-        console.error("Non-200 status:", response.status);
-
-        Swal.fire({
-          icon: "error",
-          title: "Error",
-          toast: true,
-          position: "top-end",
-          iconColor: "white",
-          customClass: {
-            popup: "colored-toast",
-          },
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-        });
+        // Swal.fire({
+        //   icon: "error",
+        //   title: "Error",
+        //   toast: true,
+        //   position: "top-end",
+        //   iconColor: "white",
+        //   customClass: {
+        //     popup: "colored-toast",
+        //   },
+        //   showConfirmButton: false,
+        //   timer: 3000,
+        //   timerProgressBar: true,
+        // });
       }
     } catch (error) {
-      console.error("Error:", error);
-
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        toast: true,
-        position: "top-end",
-        iconColor: "white",
-        customClass: {
-          popup: "colored-toast",
-        },
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-      });
+      // Swal.fire({
+      //   icon: "error",
+      //   title: "Error",
+      //   toast: true,
+      //   position: "top-end",
+      //   iconColor: "white",
+      //   customClass: {
+      //     popup: "colored-toast",
+      //   },
+      //   showConfirmButton: false,
+      //   timer: 3000,
+      //   timerProgressBar: true,
+      // });
     }
   };
 
