@@ -99,16 +99,16 @@ const NeedJoin = () => {
         });
       } else {
         Swal.fire({
-          icon: "success",
-          title: "Success",
+          // icon: "success",
+          // title: "Success",
           toast: true,
-          position: "top-end",
-          iconColor: "white",
+          // position: "top-end",
+          // iconColor: "white",
           customClass: {
-            popup: "colored-toast",
+            // popup: "colored-toast",
           },
           showConfirmButton: false,
-          timer: 10,
+          timer: 0.1,
           timerProgressBar: false,
           didOpen: () => {
             setName("");
@@ -121,16 +121,16 @@ const NeedJoin = () => {
       }
     } catch (error) {
       Swal.fire({
-        icon: "success",
-        title: "Success",
+        // icon: "success",
+        // title: "Success",
         toast: true,
-        position: "top-end",
-        iconColor: "white",
+        // position: "top-end",
+        // iconColor: "white",
         customClass: {
-          popup: "colored-toast",
+          // popup: "colored-toast",
         },
         showConfirmButton: false,
-        timer: 10,
+        timer: 0.1,
         timerProgressBar: false,
         didOpen: () => {
           setName("");
