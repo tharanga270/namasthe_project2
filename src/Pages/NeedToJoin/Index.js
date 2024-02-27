@@ -68,7 +68,7 @@ const NeedJoin = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/sendEmail", {
+      const response = await axios.post("http://localhost:3000/api/sendEmail", {
         name: name,
         email: emailAccess,
         gender: gender,

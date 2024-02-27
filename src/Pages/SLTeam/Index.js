@@ -41,13 +41,13 @@ const data = [
     position: "Principle Investigator",
     email: "dilvip777@yahoo.com",
   },
-  {
-    id: 3,
-    image: raj,
-    name: "Dr Raj Phriyadharshini",
-    position: "Research Team Director",
-    email: "rajphriya.namaste@gmail.com",
-  },
+  // {
+  //   id: 3,
+  //   image: raj,
+  //   name: "Dr Raj Phriyadharshini",
+  //   position: "Research Team Director",
+  //   email: "rajphriya.namaste@gmail.com",
+  // },
   {
     id: 4,
     image: ayendre,
@@ -85,13 +85,13 @@ const data = [
     position: "Accountant",
     email: "finance4namaste@gmail.com",
   },
-  {
-    id: 9,
-    image: nethma,
-    name: "Nethma Abeysingha",
-    position: "Research Associate",
-    email: "nethma.malshani@gmail.com",
-  },
+  // {
+  //   id: 9,
+  //   image: nethma,
+  //   name: "Nethma Abeysingha",
+  //   position: "Research Associate",
+  //   email: "nethma.malshani@gmail.com",
+  // },
   {
     id: 10,
     image: piumi,
@@ -136,13 +136,13 @@ const data = [
     position2: "",
     email: "yashodharajapaksha007@gmail.com",
   },
-  {
-    id: 16,
-    image: abi,
-    name: "Abirami Thanabalasundaram",
-    position: "Research Associate",
-    email: "abirami.namaste@gmail.com",
-  },
+  // {
+  //   id: 16,
+  //   image: abi,
+  //   name: "Abirami Thanabalasundaram",
+  //   position: "Research Associate",
+  //   email: "abirami.namaste@gmail.com",
+  // },
   {
     id: 17,
     image: venura,

@@ -13,18 +13,7 @@ const port = process.env.MAIN_PORT || 5001;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(
-  cors(
-    app.use(
-      cors({
-        origin: ["https://namasthe-project2-lbl5.vercel.app"],
-        methods: ["POST"],
-        credentials: true,
-      })
-    )
-  )
-);
-// comes inside cors
+app.use(cors());
 
 app.use(express.json());
 
@@ -51,8 +40,9 @@ app.post("/sendEmail", async (req, res) => {
     Team Wemixt
   `;
     await sendEmail({
-      to: process.env.TO_EMAIL2, //ruc
-      // to: process.env.TO_EMAIL, //abi
+      // to: process.env.TO_EMAIL2, //ruc TO_EMAIL2=ruchira.wemixt@gmail.com
+      to: process.env.TO_EMAIL3,
+
       subject: "New Application Received",
       text: emailBody,
 
@@ -63,6 +53,7 @@ app.post("/sendEmail", async (req, res) => {
     });
 
     res.status(200).json({ message: "Email sent successfully!" });
+    console.error("Email sent successfully!");
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
