@@ -178,7 +178,7 @@ const data = [
   {
     id: 21,
     image: anupi,
-    name: 'Anupi Jayawikrama',
+    name: 'Anupi Jayawickrama',
     position: 'Research Associate',
     email: 'anupi.namaste@gmail.com',
   },
