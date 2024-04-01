@@ -182,13 +182,13 @@ const data = [
     position: 'Research Associate',
     email: 'anupi.namaste@gmail.com',
   },
-  {
-    id: 22,
-    image: kushani,
-    name: 'Kushani Fernando',
-    position: 'Research Associate',
-    email: 'kushani.namaste@gmail.com',
-  },
+  // {
+  //   id: 22,
+  //   image: kushani,
+  //   name: 'Kushani Fernando',
+  //   position: 'Research Associate',
+  //   email: 'kushani.namaste@gmail.com',
+  // },
 ];
 
 const SLTeam = () => {
