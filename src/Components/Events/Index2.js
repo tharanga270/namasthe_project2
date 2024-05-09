@@ -1,16 +1,16 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Paper, Grid, Box, Typography } from "@mui/material";
-import { event1 } from "../../config/Images/Images";
-import { useSpring, animated } from "react-spring";
+import React, { useState, useRef, useEffect } from 'react';
+import { Paper, Grid, Box, Typography } from '@mui/material';
+import { event1 } from '../../config/Images/Images';
+import { useSpring, animated } from 'react-spring';
 
 const EventRightPaper = () => {
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
   const [animatedProps, setAnimatedProps] = useSpring(() => ({
     opacity: 0,
-    transform: isVisible ? "translateX(0)" : "translateX(-50px)",
-    from: { opacity: 0, transform: "translateX(-100%)" },
-    to: { opacity: 1, transform: "translateX(0)" },
+    transform: isVisible ? 'translateX(0)' : 'translateX(-50px)',
+    from: { opacity: 0, transform: 'translateX(-100%)' },
+    to: { opacity: 1, transform: 'translateX(0)' },
     config: { duration: 1000 },
   }));
 
@@ -27,32 +27,32 @@ const EventRightPaper = () => {
         style={animatedProps}
         elevation={0}
         sx={{
-          background: "rgb(170, 122, 255)",
+          background: 'rgb(170, 122, 255)',
           marginRight: {
-            xl: "10rem",
-            lg: "9rem",
-            md: "6rem",
-            sm: "4rem",
-            xs: "1px",
+            xl: '10rem',
+            lg: '9rem',
+            md: '6rem',
+            sm: '4rem',
+            xs: '1px',
           },
-          borderTopRightRadius: "40px",
-          borderBottomRightRadius: "40px",
+          borderTopRightRadius: '40px',
+          borderBottomRightRadius: '40px',
           mb: 7,
-          paddingTop: "20px ",
-          paddingBottom: "20px",
+          paddingTop: '20px ',
+          paddingBottom: '20px',
           paddingLeft: {
-            xl: "20px ",
-            lg: "20px",
-            md: "15px",
-            sm: "12px",
-            xs: "6px",
+            xl: '20px ',
+            lg: '20px',
+            md: '15px',
+            sm: '12px',
+            xs: '6px',
           },
           paddingRight: {
-            xl: "20px ",
-            lg: "20px",
-            md: "15px",
-            sm: "12px",
-            xs: "6px",
+            xl: '20px ',
+            lg: '20px',
+            md: '15px',
+            sm: '12px',
+            xs: '6px',
           },
         }}
       >
@@ -61,14 +61,14 @@ const EventRightPaper = () => {
           spacing={2}
           sx={{
             paddingLeft: {
-              xl: "2rem",
-              lg: "2rem",
-              md: "2rem",
-              sm: "1rem",
-              xs: "0rem",
+              xl: '2rem',
+              lg: '2rem',
+              md: '2rem',
+              sm: '1rem',
+              xs: '0rem',
             },
-            paddingTop: "2rem",
-            paddingBottom: "2rem",
+            paddingTop: '2rem',
+            paddingBottom: '2rem',
           }}
         >
           <Grid
@@ -82,17 +82,17 @@ const EventRightPaper = () => {
           >
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
-                mt: { lg: "7rem", xl: "0", md: "0", xs: "0" },
-                mb: { lg: "7rem", xl: "0", md: "0", xs: "0" },
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.3)',
+                mt: { lg: '7rem', xl: '0', md: '0', xs: '0' },
+                mb: { lg: '7rem', xl: '0', md: '0', xs: '0' },
               }}
             >
               <img src={event1} alt={event1} width="100%" />
             </Box>
-          </Grid>{" "}
+          </Grid>{' '}
           <Grid
             item
             xs={12}
@@ -106,28 +106,28 @@ const EventRightPaper = () => {
               sx={{
                 fontWeight: 500,
                 fontSize: {
-                  xl: "52px",
-                  lg: "47px",
-                  md: "47px",
-                  sm: "30px",
-                  xs: "25px",
+                  xl: '52px',
+                  lg: '47px',
+                  md: '47px',
+                  sm: '30px',
+                  xs: '25px',
                 },
-                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
                 paddingLeft: {
-                  xl: "3rem",
-                  lg: "3rem",
-                  md: "2rem",
-                  sm: "2rem",
-                  xs: "0rem",
+                  xl: '3rem',
+                  lg: '3rem',
+                  md: '2rem',
+                  sm: '2rem',
+                  xs: '0rem',
                 },
                 textAlign: {
-                  xs: "center",
-                  xl: "start",
-                  lg: "start",
-                  md: "start",
-                  sm: "start",
+                  xs: 'center',
+                  xl: 'start',
+                  lg: 'start',
+                  md: 'start',
+                  sm: 'start',
                 },
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: 'Poppins, sans-serif',
               }}
             >
               Key-Informative Interviews (Klls) and co-design workshops
@@ -136,27 +136,27 @@ const EventRightPaper = () => {
               sx={{
                 fontWeight: 500,
                 fontSize: {
-                  xl: "21px",
-                  lg: "21px",
-                  md: "21px",
-                  sm: "18px",
-                  xs: "15px",
+                  xl: '21px',
+                  lg: '21px',
+                  md: '21px',
+                  sm: '18px',
+                  xs: '15px',
                 },
                 paddingLeft: {
-                  xl: "3rem",
-                  lg: "3rem",
-                  md: "2rem",
-                  sm: "2rem",
-                  xs: "0rem",
+                  xl: '3rem',
+                  lg: '3rem',
+                  md: '2rem',
+                  sm: '2rem',
+                  xs: '0rem',
                 },
                 textAlign: {
-                  xs: "center",
-                  xl: "start",
-                  lg: "start",
-                  md: "start",
-                  sm: "start",
+                  xs: 'center',
+                  xl: 'start',
+                  lg: 'start',
+                  md: 'start',
+                  sm: 'start',
                 },
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: 'Poppins, sans-serif',
               }}
             >
               The above activities were completed from 5th June to 8th June 2023
@@ -165,34 +165,39 @@ const EventRightPaper = () => {
               work with children with ASD, and 3 nonspecialist healthcare
               workers) and 2 co-design workshops (1 for parents who have
               children with ASD, 1 for the non-specialist healthcare workers).
+              The interview guides were developed through scoping interviews
+              done with specialists, parents, and individuals with ASD in each
+              country's sites before the KIIs and co-design workshops. Three
+              members from Quicksand Studio participated in the KIIs and
+              co-design workshops in person.
             </Typography>
             <br />
             <Typography
               sx={{
                 fontWeight: 500,
                 fontSize: {
-                  xl: "21px",
-                  lg: "21px",
-                  md: "21px",
-                  sm: "18px",
-                  xs: "15px",
+                  xl: '21px',
+                  lg: '21px',
+                  md: '21px',
+                  sm: '18px',
+                  xs: '15px',
                 },
                 paddingLeft: {
-                  xl: "3rem",
-                  lg: "3rem",
-                  md: "2rem",
-                  sm: "2rem",
-                  xs: "0rem",
+                  xl: '3rem',
+                  lg: '3rem',
+                  md: '2rem',
+                  sm: '2rem',
+                  xs: '0rem',
                 },
                 // paddingRight: "2rem",
                 textAlign: {
-                  xs: "center",
-                  xl: "start",
-                  lg: "start",
-                  md: "start",
-                  sm: "start",
+                  xs: 'center',
+                  xl: 'start',
+                  lg: 'start',
+                  md: 'start',
+                  sm: 'start',
                 },
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: 'Poppins, sans-serif',
               }}
             >
               The interview guides were developed through scoping interviews
@@ -201,7 +206,7 @@ const EventRightPaper = () => {
               members from Quicksand Studio participated in the KIIs and
               co-design workshops in person
             </Typography>
-          </Grid>{" "}
+          </Grid>{' '}
         </Grid>
       </AnimatedPaper>
     </div>

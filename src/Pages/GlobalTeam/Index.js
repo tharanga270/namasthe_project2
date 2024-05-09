@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -6,6 +6,7 @@ import { gt6, gt2, gt7, gt4, gt8, email } from "../../config/Images/Images";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
 import "./style.css";
+import Preloader from "../../Components/Preloader";
 const data = [
   {
     id: 1,
@@ -59,8 +60,17 @@ const data = [
   },
 ];
 const GlobalTeam = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div>
+      {isLoading ? <Preloader /> : <></>}
       <Typography
         variant="h4"
         component="h2"

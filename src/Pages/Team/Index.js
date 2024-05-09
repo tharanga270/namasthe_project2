@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import { Team1, Team2, gif } from "../../config/Images/Images";
 import { Link } from "react-router-dom";
-
+import Preloader from './../../Components/Preloader/index';
 const Team = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div>
+      {isLoading ? <Preloader /> : <></>}
       <Typography
         variant="h4"
         component="h2"

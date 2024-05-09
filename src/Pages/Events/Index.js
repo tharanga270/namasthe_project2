@@ -1,30 +1,189 @@
-import React, { useEffect } from "react";
-import EventLeftPaper from "../../Components/Events/Index";
-import EventRightPaper from "../../Components/Events/Index2";
-import EventRightPaper2 from "../../Components/Events/Index3";
-import EventLeftPaper2 from "../../Components/Events/Index4";
-import { Box } from "@mui/material";
+import React, { useEffect, useState } from 'react';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import Grid from '@mui/material/Grid';
+import { Team1, Team2, gif } from '../../config/Images/Images';
+import { Link } from 'react-router-dom';
+import Preloader from './../../Components/Preloader/index';
 const Events = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
-      <Box
+      {isLoading ? <Preloader /> : <></>}
+      {/* <Typography
+        variant="h4"
+        component="h2"
         sx={{
-          textAlign: "center",
-          fontWeight: 600,
-          fontSize: "50px",
-          mb: 2,
-          mt: 2,
+          fontWeight: '600',
+          fontSize: '60px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontFamily: 'Poppins, sans-serif',
+          mt: 4,
         }}
       >
-        <h1>Events</h1>
-      </Box>
-      <EventRightPaper />
-      <EventLeftPaper />
-      <EventRightPaper2 />
-      <EventLeftPaper2 />
+        Our Team
+      </Typography> */}
+      <div style={{ marginLeft: '5rem', marginRight: '5rem', marginBottom:'3rem' }}>
+        <Grid
+          container
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItem: 'center',
+          }}
+        >
+          <Grid
+            item
+            lg={6}
+            md={6}
+            sm={12}
+            xs={12}
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItem: 'center',
+            }}
+          >
+            <Link to="/normal-events" style={{ textDecoration: 'none' }}>
+              <Card
+                sx={{
+                  // maxWidth: 345,
+                  mt: 6,
+                  borderRadius: 10,
+                  height: '15rem',
+                  width: '15rem',
+
+                  border: '2px solid green',
+                  transition: 'border-color 0.3s ease',
+                  '&:hover': {
+                    borderColor: 'purple',
+                    cursor: 'pointer',
+                  },
+                }}
+              >
+                <Grid
+                  container
+                  direction="column"
+                  justifyContent="center"
+                  alignItems="center"
+                  height="100%"
+                >
+                  <Grid
+                    item
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItem: 'center',
+                    }}
+                  >
+                    {/* <img src={Team1} alt="" width="65%" height="65%" /> */}
+                  </Grid>
+                  <Grid item>
+                    <Typography
+                      variant="body1"
+                      align="center"
+                      mt={1}
+                      sx={{
+                        fontWeight: '900',
+                        color: '#769863',
+                        fontFamily: 'Poppins, sans-serif',
+                      }}
+                    >
+                      Events
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Card>
+            </Link>
+          </Grid>
+          <Grid
+            item
+            lg={6}
+            md={6}
+            sm={12}
+            xs={12}
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItem: 'center',
+            }}
+          >
+            <Link to="/ongoing-research" style={{ textDecoration: 'none' }}>
+              <Card
+                sx={{
+                  // maxWidth: 345,
+                  mt: 6,
+                  borderRadius: 10,
+                  height: '15rem',
+                  width: '15rem',
+
+                  border: '2px solid green',
+                  transition: 'border-color 0.3s ease',
+                  '&:hover': {
+                    borderColor: 'purple',
+                    cursor: 'pointer',
+                  },
+                }}
+              >
+                <Grid
+                  container
+                  direction="column"
+                  justifyContent="center"
+                  alignItems="center"
+                  height="100%"
+                >
+                  <Grid
+                    item
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItem: 'center',
+                    }}
+                  >
+                    {/* <img src={Team2} alt="" width="65%" height="65%" /> */}
+                  </Grid>
+                  <Grid item>
+                    <Typography
+                      variant="body1"
+                      align="center"
+                      mt={1}
+                      color="purple"
+                      sx={{
+                        fontWeight: '900',
+                        color: '#769863',
+                        fontFamily: 'Poppins, sans-serif',
+                      }}
+                    >
+                      Ongoing Research
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Card>
+            </Link>
+          </Grid>
+        </Grid>
+      </div>
+      {/* <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginBottom: '2rem',
+          marginTop: '6px',
+        }}
+      >
+        <img src={gif} alt="gif" />
+      </div> */}
     </div>
   );
 };

@@ -144,7 +144,7 @@ function NavList() {
             </ListItem>
           </Typography>
         </Link>
-        <Link to="/events" style={{ textDecoration: "none" }}>
+        <Link to="/main-events" style={{ textDecoration: "none" }}>
           <Typography
             as="a"
             href="#"

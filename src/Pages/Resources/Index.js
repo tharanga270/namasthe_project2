@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Grid from '@mui/joy/Grid';
 import Container from '@mui/material/Container';
 import { Box } from '@mui/material';
-
+import Preloader from './../../Components/Preloader/index';
 const Resources = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
   return (
+    
     <Container my={3}>
+      {isLoading ? <Preloader /> : <></>}
       <Box
         sx={{
           textAlign: 'center',

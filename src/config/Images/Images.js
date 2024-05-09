@@ -43,31 +43,86 @@ export const Team2 = require('../../Common/Assets/Images/team2.png');
 export const underconstruction = require('../../Common/Assets/Images/under-construction-2891888_1280.jpg');
 
 // SL Team
-export const asiri = require('../../Common/Assets/Images/asiri.jpg');
+//export const asiri = require('../../Common/Assets/Images/asiri.jpg');
+//new asiri
+export const asiri = require('../../Common/Assets/Images/sl-team-new/asiri.png');
+
+
 export const raj = require('../../Common/Assets/Images/dr raj.jpg');
-export const chamika = require('../../Common/Assets/Images/chamika.jpg');
-export const hasuni = require('../../Common/Assets/Images/hasuni.jpg');
-export const heshali = require('../../Common/Assets/Images/heshali.jpg');
-export const poornima = require('../../Common/Assets/Images/madu.jpg');
+//export const chamika = require('../../Common/Assets/Images/chamika.jpg');
+//new chamika
+export const chamika = require('../../Common/Assets/Images/sl-team-new/chamika.png');
+
+//export const hasuni = require('../../Common/Assets/Images/hasuni.jpg');
+//new hasuni
+export const hasuni = require('../../Common/Assets/Images/sl-team-new/hasuni.png');
+
+//export const heshali = require('../../Common/Assets/Images/heshali.jpg');
+//new heshali
+export const heshali = require('../../Common/Assets/Images/sl-team-new/heshali.png');
+
+
+//export const poornima = require('../../Common/Assets/Images/madu.jpg');
+//new poornima
+export const poornima = require('../../Common/Assets/Images/sl-team-new/poornima.png');
+
 export const nethma = require('../../Common/Assets/Images/nethma.jpg');
-export const piumi = require('../../Common/Assets/Images/piyumi.jpg');
-export const rasika = require('../../Common/Assets/Images/rasika.jpg');
-export const sakuni = require('../../Common/Assets/Images/sakuni.jpg');
-export const shashini = require('../../Common/Assets/Images/professional photo.jpg');
-export const Shehara = require('../../Common/Assets/Images/shehara.jpg');
-export const yas = require('../../Common/Assets/Images/yashoda.jpg');
+//export const piumi = require('../../Common/Assets/Images/piyumi.jpg');
+//new piumi
+export const piumi = require('../../Common/Assets/Images/sl-team-new/piumi.png');
+
+//export const rasika = require('../../Common/Assets/Images/rasika.jpg');
+//new rasika
+export const rasika = require('../../Common/Assets/Images/sl-team-new/rasika.png');
+
+//export const sakuni = require('../../Common/Assets/Images/sakuni.jpg');
+//new sakuni
+export const sakuni = require('../../Common/Assets/Images/sl-team-new/sakuni.png');
+
+//export const shashini = require('../../Common/Assets/Images/professional photo.jpg');
+//new shashini
+export const shashini = require('../../Common/Assets/Images/sl-team-new/shashini.png');
+
+//export const Shehara = require('../../Common/Assets/Images/shehara.jpg');
+//new shehara
+export const Shehara = require('../../Common/Assets/Images/sl-team-new/shehara.png');
+
+//export const yas = require('../../Common/Assets/Images/yashoda.jpg');
+//new yas
+export const yas = require('../../Common/Assets/Images/sl-team-new/yas.png');
+
 export const abi = require('../../Common/Assets/Images/abi.jpg');
-export const venura = require('../../Common/Assets/Images/venura.jpg');
-export const vidusha = require('../../Common/Assets/Images/vidusha.jpg');
-export const dilini = require('../../Common/Assets/Images/dr dilini.jpg');
-export const ayendre = require('../../Common/Assets/Images/aysha-Untitled design (1).jpg');
+//export const venura = require('../../Common/Assets/Images/venura.jpg');
+//new venura
+export const venura = require('../../Common/Assets/Images/sl-team-new/venura.png');
+
+//export const vidusha = require('../../Common/Assets/Images/vidusha.jpg');
+//new vidusha
+export const vidusha = require('../../Common/Assets/Images/sl-team-new/vidusha.png');
+
+//export const dilini = require('../../Common/Assets/Images/dr dilini.jpg');
+//new dilini
+export const dilini = require('../../Common/Assets/Images/sl-team-new/drdilini.png');
+
+//export const ayendre = require('../../Common/Assets/Images/aysha-Untitled design (1).jpg');
+//new ayendre
+export const ayendre = require('../../Common/Assets/Images/sl-team-new/ayendre.png');
+
 // ======new members==========
-export const jayamini = require('../../Common/Assets/Images/jayamini.png');
-export const madushalini = require('../../Common/Assets/Images/madushalini.png');
-export const anupi = require('../../Common/Assets/Images/anupi.png');
+//export const jayamini = require('../../Common/Assets/Images/jayamini.png');
+//new jayamini
+export const jayamini = require('../../Common/Assets/Images/sl-team-new/jayamini.png');
+
+//export const madushalini = require('../../Common/Assets/Images/madushalini.png');
+//new madushalini
+export const madushalini = require('../../Common/Assets/Images/sl-team-new/madushalini.png');
+
+//export const anupi = require('../../Common/Assets/Images/anupi.png');
+//new anupi
+export const anupi = require('../../Common/Assets/Images/sl-team-new/anupi.png');
+
 export const kushani = require('../../Common/Assets/Images/kushani.png');
 //kushani
-
 
 export const laptopimg = require('../../Common/Assets/Images/About us-1.png');
 export const proobj = require('../../Common/Assets/Images/proobj.png');
@@ -83,6 +138,8 @@ export const contactus = require('../../Common/Assets/Images/contactus.png');
 
 export const card01 = require('../../Common/Assets/Images/card1.png');
 export const card02 = require('../../Common/Assets/Images/croprounded1.jpg');
+// new
+export const card03 = require('../../Common/Assets/Images/nulrundi-gunawardane.png');
 
 export const gt1 = require('../../Common/Assets/Images/gt1.jpg');
 export const gt2 = require('../../Common/Assets/Images/gt2.jpg');

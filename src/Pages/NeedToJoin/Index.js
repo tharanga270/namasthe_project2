@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
-import { withbaby } from "../../config/Images/Images";
-import TextField from "@mui/material/TextField";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
+import React, { useEffect, useState, useRef } from 'react';
+import { withbaby } from '../../config/Images/Images';
+import TextField from '@mui/material/TextField';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import {
   Grid,
   Paper,
@@ -11,19 +11,20 @@ import {
   Button,
   Typography,
   FormHelperText,
-} from "@mui/material";
-import axios from "axios";
-import Swal from "sweetalert2";
-import "./style.css";
+} from '@mui/material';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import './style.css';
+import Preloader from './../../Components/Preloader/index';
 
 const NeedJoin = () => {
   const form = useRef();
 
-  const [name, setName] = React.useState("");
-  const [emailAccess, setEmailAccess] = useState("");
-  const [gender, setGender] = useState("");
-  const [contactNo, setContactNo] = useState("");
-  const [address, setAddress] = useState("");
+  const [name, setName] = React.useState('');
+  const [emailAccess, setEmailAccess] = useState('');
+  const [gender, setGender] = useState('');
+  const [contactNo, setContactNo] = useState('');
+  const [address, setAddress] = useState('');
 
   const [nameError, setNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
@@ -68,7 +69,7 @@ const NeedJoin = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3000/api/sendEmail", {
+      const response = await axios.post('http://localhost:3000/api/sendEmail', {
         name: name,
         email: emailAccess,
         gender: gender,
@@ -78,23 +79,23 @@ const NeedJoin = () => {
 
       if (response.status === 200) {
         Swal.fire({
-          icon: "success",
-          title: "Success",
+          icon: 'success',
+          title: 'Success',
           toast: true,
-          position: "top-end",
-          iconColor: "white",
+          position: 'top-end',
+          iconColor: 'white',
           customClass: {
-            popup: "colored-toast",
+            popup: 'colored-toast',
           },
           showConfirmButton: false,
           timer: 3000,
           timerProgressBar: true,
           didOpen: () => {
-            setName("");
-            setEmailAccess("");
-            setGender("");
-            setContactNo("");
-            setAddress("");
+            setName('');
+            setEmailAccess('');
+            setGender('');
+            setContactNo('');
+            setAddress('');
           },
         });
       } else {
@@ -111,11 +112,11 @@ const NeedJoin = () => {
           timer: 0.1,
           timerProgressBar: false,
           didOpen: () => {
-            setName("");
-            setEmailAccess("");
-            setGender("");
-            setContactNo("");
-            setAddress("");
+            setName('');
+            setEmailAccess('');
+            setGender('');
+            setContactNo('');
+            setAddress('');
           },
         });
       }
@@ -133,29 +134,36 @@ const NeedJoin = () => {
         timer: 0.1,
         timerProgressBar: false,
         didOpen: () => {
-          setName("");
-          setEmailAccess("");
-          setGender("");
-          setContactNo("");
-          setAddress("");
+          setName('');
+          setEmailAccess('');
+          setGender('');
+          setContactNo('');
+          setAddress('');
         },
       });
     }
   };
 
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
   }, []);
   return (
     <>
+      {isLoading ? <Preloader /> : <></>}
       <Typography
         gutterBottom
         sx={{
           fontWeight: 600,
-          textAlign: "center",
-          fontSize: "31px",
-          fontFamily: "Poppins, sans-serif",
-          color: "red",
+          textAlign: 'center',
+          fontSize: '31px',
+          fontFamily: 'Poppins, sans-serif',
+          color: 'red',
           mb: 7,
           mt: 7,
         }}
@@ -166,29 +174,29 @@ const NeedJoin = () => {
       </Typography>
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <Paper
           elevation={0}
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "45rem",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '45rem',
             mr: {
-              xs: "1rem",
-              sm: "",
-              md: "",
-              lg: "",
+              xs: '1rem',
+              sm: '',
+              md: '',
+              lg: '',
             },
             ml: {
-              xs: "1rem",
-              sm: "",
-              md: "",
-              lg: "",
+              xs: '1rem',
+              sm: '',
+              md: '',
+              lg: '',
             },
           }}
         >
@@ -202,14 +210,14 @@ const NeedJoin = () => {
                   id="outlined-basic"
                   label="Name"
                   variant="outlined"
-                  sx={{ width: "100%" }}
+                  sx={{ width: '100%' }}
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
                     setNameError(false);
                   }}
                   error={nameError}
-                  helperText={nameError ? "Name is required" : ""}
+                  helperText={nameError ? 'Name is required' : ''}
                 />
               </Grid>
               <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
@@ -242,36 +250,36 @@ const NeedJoin = () => {
                 )}
               </Grid>
               <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                {" "}
+                {' '}
                 <label className="label">Address</label>
               </Grid>
               <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
-                {" "}
+                {' '}
                 <TextField
                   id="outlined-basic"
                   label="Address"
                   variant="outlined"
-                  sx={{ width: "100%" }}
+                  sx={{ width: '100%' }}
                   value={address}
                   onChange={(e) => {
                     setAddress(e.target.value);
                     setAddressError(false);
                   }}
                   error={addressError}
-                  helperText={addressError ? "Address is required" : ""}
+                  helperText={addressError ? 'Address is required' : ''}
                 />
               </Grid>
               <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                {" "}
+                {' '}
                 <label className="label">Email</label>
               </Grid>
               <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
-                {" "}
+                {' '}
                 <TextField
                   id="outlined-basic"
                   label="Email"
                   variant="outlined"
-                  sx={{ width: "100%" }}
+                  sx={{ width: '100%' }}
                   value={emailAccess}
                   onChange={(e) => {
                     setEmailAccess(e.target.value);
@@ -279,32 +287,32 @@ const NeedJoin = () => {
                   }}
                   error={emailError}
                   helperText={
-                    emailError ? "Valid email address is required" : ""
+                    emailError ? 'Valid email address is required' : ''
                   }
                 />
               </Grid>
               <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-                {" "}
+                {' '}
                 <label className="label">Contact Number</label>
               </Grid>
               <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
-                {" "}
+                {' '}
                 <TextField
                   id="outlined-basic"
                   label="Contact Number"
                   variant="outlined"
-                  sx={{ width: "100%" }}
+                  sx={{ width: '100%' }}
                   value={contactNo}
                   onChange={(e) => {
                     const input = e.target.value
-                      .replace(/\D/g, "")
+                      .replace(/\D/g, '')
                       .slice(0, 10);
                     setContactNo(input);
                     setContactNoError(false);
                   }}
                   error={contactNoError}
                   helperText={
-                    contactNoError ? "Contact number should be 10 digits" : ""
+                    contactNoError ? 'Contact number should be 10 digits' : ''
                   }
                 />
               </Grid>
@@ -312,7 +320,7 @@ const NeedJoin = () => {
                 <Button
                   variant="contained"
                   color="success"
-                  sx={{ fontSize: "20px", ml: 2, mt: 4, borderRadius: "10px" }}
+                  sx={{ fontSize: '20px', ml: 2, mt: 4, borderRadius: '10px' }}
                   type="submit"
                   onClick={handleSubmit}
                 >
@@ -326,18 +334,18 @@ const NeedJoin = () => {
 
       <Box
         sx={{
-          display: "flex",
+          display: 'flex',
           justifyContent: {
-            xl: "flex-end",
-            lg: "flex-end",
-            md: "center",
-            sm: "center",
-            xs: "center",
+            xl: 'flex-end',
+            lg: 'flex-end',
+            md: 'center',
+            sm: 'center',
+            xs: 'center',
           },
           mr: 10,
         }}
       >
-        <img src={withbaby} alt={withbaby} style={{ width: "550px" }} />
+        <img src={withbaby} alt={withbaby} style={{ width: '550px' }} />
       </Box>
       <br />
     </>

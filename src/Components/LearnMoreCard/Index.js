@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import "./style.css";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import { project2 } from "../../config/Images/Images";
+import React, { useEffect } from 'react';
+import './style.css';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import { project2 } from '../../config/Images/Images';
 
 const LearnMoreCard = () => {
   useEffect(() => {
@@ -11,8 +11,8 @@ const LearnMoreCard = () => {
   return (
     <Box
       sx={{
-        ml: { xl: "7rem", lg: "6rem", md: "4rem", sm: "2rem", xs: "2rem" },
-        mr: { xl: "7rem", lg: "6rem", md: "4rem", sm: "2rem", xs: "2rem" },
+        ml: { xl: '7rem', lg: '6rem', md: '4rem', sm: '2rem', xs: '2rem' },
+        mr: { xl: '7rem', lg: '6rem', md: '4rem', sm: '2rem', xs: '2rem' },
       }}
     >
       <h4 className="learn_h4">Project background</h4>
@@ -22,15 +22,15 @@ const LearnMoreCard = () => {
           className="learn_typography1"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "22px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '22px',
             },
           }}
         >
-          Child neurodevelopment and autism research unit launches in South Asia
+          Child Neurodevelopment and autism research unit launches in South Asia
         </Typography>
         <br />
         <Typography
@@ -38,19 +38,19 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
           NAMASTE builds on the decade-long collaboration between Sangath
           (India) and the University of Manchester (UK) to implement a novel
           integrated detection-care pathway for young children with autism and
-          their families in India, Sri Lanka and Nepal, using
-          non-specialist health workers.
+          their families in India, Sri Lanka, and Nepal, using non-specialist
+          health workers.
         </Typography>
         <br />
         <Typography
@@ -58,11 +58,11 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
@@ -77,18 +77,18 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
-          NAMASTE builds on Manchester’s own autism programme and more than a
-          decade of partnership with India, to implement a novel integrated
+          NAMASTE builds on Manchester’s autism program and more than a decade
+          of partnership with India, to implement a novel integrated
           detection-care pathway for young children with autism and their
-          families in India, Sri Lanka and Nepal, using lay health workers.
+          families in India, Sri Lanka, and Nepal, using lay health workers.
         </Typography>
         <br />
         <Typography
@@ -96,15 +96,15 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
-          NAMASTE will also develop much needed research capacity in the field
+          NAMASTE will also develop much-needed research capacity in the field
           of neurodevelopmental disorders in South Asia.
         </Typography>
         <br />
@@ -113,16 +113,16 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
           Autism Spectrum Disorder (‘Autism’) is a severe neurodevelopmental
-          disability with significant impact on children’s social development
+          disability with a significant impact on children’s social development
           and independence into adulthood and profound economic consequences.
           The WHO included autism as a key priority in its Mental Health Action
           Plan in 2014.
@@ -133,23 +133,23 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
           About five million families in India live with a young autistic child,
           the great majority with no access to services. Over a 10-year
           collaboration, Sangath and The University of Manchester have carefully
-          adapted an autism programme developed for the UK to the South Asian
+          adapted an autism program developed for the UK to the South Asian
           context. The resulting 'Parent-mediated Autism Social Communication
           Intervention for non-Specialists Plus’ (PASS Plus), delivered by
-          lay-health workers, is the first of its kind and has shown real-world
+          lay-health workers, is the first of its kind. It has shown real-world
           impact in two initial randomised controlled trials, with large-scale
-          evaluation underway in New Delhi.
+          evaluations underway in New Delhi.
         </Typography>
         <br />
         <Typography
@@ -157,18 +157,18 @@ const LearnMoreCard = () => {
           className="learn_typography3"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
-          NAMASTE will be a collaboration between the two lead organisations and
-          Autism Care Nepal, the College of Paediatrics Sri Lanka, Harvard
-          Medical School, La Trobe University, Kings College London, the World
-          Health Organisation and Ummeed, Mumbai.
+          NAMASTE will collaborate with the two lead organizations and Autism
+          Care Nepal, the College of Paediatrics Sri Lanka, Harvard Medical
+          School, La Trobe University, Kings College London, the World Health
+          Organisation, and Ummeed, Mumbai.
         </Typography>
         <br />
         <Typography
@@ -176,16 +176,16 @@ const LearnMoreCard = () => {
           className="learn_typography1"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
           }}
         >
-          Dr Asiri Hewamalahe, Consultant Community Physician, Ministry of
-          Health, Sri Lanka and Dr Dilini Vipulaguna, Consultant Community
+          Dr. Asiri Hewamalahe, Consultant Community Physician, Ministry of
+          Health, Sri Lanka, and Dr. Dilini Vipulaguna, Consultant Community
           Paediatrician, who will together be leading the work in Sri Lanka are
           clear that
         </Typography>
@@ -195,11 +195,11 @@ const LearnMoreCard = () => {
           className="learn_typography1"
           sx={{
             fontSize: {
-              xl: "25px",
-              lg: "25px",
-              md: "25px",
-              sm: "22px",
-              xs: "20px",
+              xl: '25px',
+              lg: '25px',
+              md: '25px',
+              sm: '22px',
+              xs: '20px',
             },
             mb: 5,
           }}
@@ -208,16 +208,16 @@ const LearnMoreCard = () => {
           early interventions for developmental disorders including autism in
           Sri Lanka. Most importantly, it will fill the gap in caregiver
           training and parent advocacy which is a timely need for families.
-          During the current context of economic hardships to Sri Lanka
+          During the current context of economic hardships in Sri Lanka
           'Namaste' is indeed a blessing".
         </Typography>
       </div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          position: "relative",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'relative',
         }}
       >
         <img

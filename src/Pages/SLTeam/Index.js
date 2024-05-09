@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -30,6 +30,7 @@ import {
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import './style.css';
+import Preloader from './../../Components/Preloader/index';
 const data = [
   {
     id: 1,
@@ -192,8 +193,17 @@ const data = [
 ];
 
 const SLTeam = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div>
+      {isLoading ? <Preloader /> : <></>}
       <Typography
         variant="h4"
         component="h2"
@@ -249,7 +259,7 @@ const SLTeam = () => {
                       borderRadius: '15px',
                       transition: 'transform 0.3s',
                     }}
-                    width="339px"
+                    width="512px"
                     height="512px"
                   />
                 </Box>
