@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import EventLeftPaper from '../../Components/Events/Index';
 import EventRightPaper from '../../Components/Events/Index2';
-import EventRightPaper2 from '../../Components/Events/Index3';
+//import EventRightPaper2 from '../../Components/Events/Index3';
 import EventLeftPaper2 from '../../Components/Events/Index4';
 import { Box } from '@mui/material';
 import Preloader from '../../Components/Preloader/index';
+import EventLotusTower from './../../Components/Events/Index5';
+import EventSACS from '../../Components/Events/Index6';
+import EventCST from '../../Components/Events/Index7';
+
 const NormalEvents = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -33,6 +37,9 @@ const NormalEvents = () => {
       <EventLeftPaper />
       {/* <EventRightPaper2 /> */}
       <EventLeftPaper2 />
+      <EventLotusTower />
+      <EventSACS />
+      <EventCST />
     </div>
   );
 };

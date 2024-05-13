@@ -156,6 +156,8 @@ const EventLeftPaper2 = () => {
                 Advisory Board (CAB) with 12 members including parents who have
                 children with ASD, adults with ASD, and preschool teachers who
                 work with children with ASD and special needs.
+
+                
               </Typography>
               <br />
               <Typography
@@ -187,6 +189,7 @@ const EventLeftPaper2 = () => {
                 }}
               >
                 We conducted 2 CAB meetings; in May and October.
+                
               </Typography>
             </Box>
           </Grid>

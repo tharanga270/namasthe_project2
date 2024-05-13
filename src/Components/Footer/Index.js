@@ -257,11 +257,11 @@ const Footer = () => {
                 }}
               >
                 <ListItem>
-                  <a href="https://www.instagram.com/">
+                  {/* <a href="https://www.instagram.com/">
                     <InstagramIcon />
-                  </a>
+                  </a> */}
                   &nbsp;
-                  <a href="https://www.facebook.com/">
+                  <a href="https://www.facebook.com/profile.php?id=61559790443856">
                     <FacebookRoundedIcon />
                   </a>
                   &nbsp;

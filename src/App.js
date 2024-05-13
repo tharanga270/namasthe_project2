@@ -15,6 +15,8 @@ import NormalEvents from './Pages/NormalEvents';
 import Contact from './Pages/Contact/Index';
 import Resources from './Pages/Resources/Index';
 import OngoingResearch from './Pages/OngoingResearch';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 function App() {
   return (
     <div className="App">
@@ -31,7 +33,7 @@ function App() {
         <Route path="/normal-events" element={<NormalEvents />} />
         <Route path="/contacts" element={<Contact />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/ongoing-research" element={<OngoingResearch/>} />
+        <Route path="/ongoing-research" element={<OngoingResearch />} />
       </Routes>
       <Footer />
     </div>

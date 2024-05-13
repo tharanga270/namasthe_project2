@@ -47,7 +47,6 @@ export const underconstruction = require('../../Common/Assets/Images/under-const
 //new asiri
 export const asiri = require('../../Common/Assets/Images/sl-team-new/asiri.png');
 
-
 export const raj = require('../../Common/Assets/Images/dr raj.jpg');
 //export const chamika = require('../../Common/Assets/Images/chamika.jpg');
 //new chamika
@@ -60,7 +59,6 @@ export const hasuni = require('../../Common/Assets/Images/sl-team-new/hasuni.png
 //export const heshali = require('../../Common/Assets/Images/heshali.jpg');
 //new heshali
 export const heshali = require('../../Common/Assets/Images/sl-team-new/heshali.png');
-
 
 //export const poornima = require('../../Common/Assets/Images/madu.jpg');
 //new poornima
@@ -132,6 +130,13 @@ export const event1 = require('../../Common/Assets/Images/imag1.JPG');
 export const event2 = require('../../Common/Assets/Images/img2.JPG');
 export const event3 = require('../../Common/Assets/Images/img3.JPG');
 export const event4 = require('../../Common/Assets/Images/event4.jpg');
+//event lotus=event5
+export const event5 = require('../../Common/Assets/Images/event5.webp');
+//event SACS=event6
+export const event6 = require('../../Common/Assets/Images/event6.JPG');
+//event CST
+export const event_cst_1 = require('../../Common/Assets/Images/normal-events-carousel/CST1.JPG');
+export const event_cst_2 = require('../../Common/Assets/Images/normal-events-carousel/CST2.JPG');
 
 export const family = require('../../Common/Assets/Images/withbaby.png');
 export const contactus = require('../../Common/Assets/Images/contactus.png');
