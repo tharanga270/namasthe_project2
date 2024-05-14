@@ -8,6 +8,11 @@ import Preloader from '../../Components/Preloader/index';
 import EventLotusTower from './../../Components/Events/Index5';
 import EventSACS from '../../Components/Events/Index6';
 import EventCST from '../../Components/Events/Index7';
+import EventADOS from '../../Components/Events/Index8';
+import EventSLCP from '../../Components/Events/Index9';
+import EventAutismAwareness from '../../Components/Events/Index10';
+import EventIRD from '../../Components/Events/Index11';
+import EventVABS from '../../Components/Events/Index12';
 
 const NormalEvents = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +45,11 @@ const NormalEvents = () => {
       <EventLotusTower />
       <EventSACS />
       <EventCST />
+      <EventADOS />
+      <EventSLCP />
+      <EventAutismAwareness />
+      <EventIRD />
+      <EventVABS />
     </div>
   );
 };

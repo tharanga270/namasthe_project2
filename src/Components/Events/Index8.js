@@ -1,19 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Paper, Grid, Box, Typography } from '@mui/material';
-import { event6 } from '../../config/Images/Images';
+import { event4 } from '../../config/Images/Images';
 import { useSpring, animated } from 'react-spring';
-import { CarouselNormalEvents } from '../CarouselNormalEvents';
-import { event_sacs_1, event_sacs_2 } from '../../config/Images/Images';
 
-const EventSACS = () => {
-  const slideImages = [
-    {
-      image: event_sacs_1,
-    },
-    {
-      image: event_sacs_2,
-    },
-  ];
+const EventADOS = () => {
   const [isVisible, setVisible] = useState(false);
   const ref = useRef(null);
 
@@ -133,7 +123,7 @@ const EventSACS = () => {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                SACS mock sessions for PHMs
+                ADOS training workshop
               </Typography>
               <Typography
                 sx={{
@@ -162,11 +152,9 @@ const EventSACS = () => {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati optio ea aut eius voluptates commodi voluptas mollitia
-                quisquam nostrum, sunt, alias omnis tempora explicabo quibusdam
-                id inventore officiis recusandae saepe modi amet quos! Delectus,
-                dolorem.
+                The first day focused on the introduction of ADOS, while the
+                second session consisted of hands-on training with the tools and
+                demonstration of ADOS.
               </Typography>
               <br />
               <Typography
@@ -197,9 +185,7 @@ const EventSACS = () => {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                obcaecati saepe. Consequuntur id sequi mollitia accusamus vel.
-                Voluptatem ducimus excepturi dolorum voluptatum.
+                {/* We conducted 2 CAB meetings; in May and October. */}
               </Typography>
             </Box>
           </Grid>
@@ -214,8 +200,7 @@ const EventSACS = () => {
                 mb: { lg: '7rem', xl: '0', md: '0', xs: '0' },
               }}
             >
-              {/* <img src={event6} alt={event6} width="100%" /> */}
-              <CarouselNormalEvents slideImages={slideImages}/>
+              {/* <img src={event4} alt={event4} width="100%" /> */}
             </Box>
           </Grid>
         </Grid>
@@ -224,4 +209,4 @@ const EventSACS = () => {
   );
 };
 
-export default EventSACS;
+export default EventADOS;

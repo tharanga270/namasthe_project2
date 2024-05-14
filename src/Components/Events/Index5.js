@@ -135,11 +135,10 @@ const EventLotusTower = () => {
                 fontFamily: 'Poppins, sans-serif',
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vel
-              eum sequi perspiciatis. Voluptatem natus deleniti cupiditate
-              corrupti at. Dignissimos, temporibus. Sed quidem sunt beatae
-              laudantium doloribus. Perferendis delectus, debitis architecto ab
-              adipisci dolores tempore itaque voluptates saepe.
+              On the 2nd of April 2023 Team namaste took a step to Light of the
+              Lotus Tower to blue in representation of the World Autism Day, to
+              spread awareness to the wider public. This day remarks the
+              establishment of the Namaste project in Sri Lanka as well.
             </Typography>
             <br />
             <Typography
@@ -169,11 +168,6 @@ const EventLotusTower = () => {
                 fontFamily: 'Poppins, sans-serif',
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              optio ea aut eius voluptates commodi voluptas mollitia quisquam
-              nostrum, sunt, alias omnis tempora explicabo quibusdam id
-              inventore officiis recusandae saepe modi amet quos! Delectus,
-              dolorem.
             </Typography>
           </Grid>
           <Grid item xs={12} lg={6} md={12} sm={12} xl={6}>

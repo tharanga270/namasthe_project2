@@ -1,18 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Paper, Grid, Box, Typography } from '@mui/material';
+import { event5 } from '../../config/Images/Images';
 import { useSpring, animated } from 'react-spring';
-import { CarouselNormalEvents } from '../CarouselNormalEvents';
-import { event_cst_1, event_cst_2 } from '../../config/Images/Images';
-
-const EventCST = () => {
-  const slideImages = [
-    {
-      image: event_cst_1,
-    },
-    {
-      image: event_cst_2,
-    },
-  ];
+const EventSLCP = () => {
   const [isVisible, setVisible] = useState(false);
   const ref = useRef(null);
 
@@ -115,7 +105,8 @@ const EventCST = () => {
                 fontFamily: 'Poppins, sans-serif',
               }}
             >
-              Stakeholder meeting
+              SLCP Collaborated capacity building session - Look, Don't Wait
+              Till You See It: Redefining Autism Puzzle for Paediatricians
             </Typography>
             <Typography
               sx={{
@@ -144,10 +135,10 @@ const EventCST = () => {
                 fontFamily: 'Poppins, sans-serif',
               }}
             >
-              {/* According to the findings from the KIIs and codesign workshops,
-              Quicksand Studio has developed prototypes of the awareness
-              toolkit, and the prototypes were tested from 30th October to 1st
-              November 2023 in Colombo. */}
+              {/* On the 2nd of April 2023 Team namaste took a step to Light of the
+              Lotus Tower to blue in representation of the World Autism Day, to
+              spread awareness to the wider public. This day remarks the
+              establishment of the Namaste project in Sri Lanka as well. */}
             </Typography>
             <br />
             <Typography
@@ -176,16 +167,7 @@ const EventCST = () => {
                 },
                 fontFamily: 'Poppins, sans-serif',
               }}
-            >
-              {/* There were 3 user-testing workshops; 1 for parents who have
-              children with ASD, 1 for frontline healthcare workers, and 1 for
-              parents with young children. In parallel to the workshops, there
-              were 6 one-to-one sessions to test the prototypes; 3 with parents
-              who have children with ASD, 2 with frontline healthcare workers,
-              and 1 with a parent who has a child with intellectual disability
-              (Down’s syndrome). There were 2 members from the Quicksand Studio
-              and 1 member from Sangath, India who participated in person. */}
-            </Typography>
+            ></Typography>
           </Grid>
           <Grid item xs={12} lg={6} md={12} sm={12} xl={6}>
             <Box
@@ -198,8 +180,7 @@ const EventCST = () => {
                 mb: { lg: '7rem', xl: '0', md: '0', xs: '0' },
               }}
             >
-              {/* <img src={event2} alt={event2} width="100%" /> */}
-              <CarouselNormalEvents slideImages={slideImages}/>
+              {/* <img src={event5} alt={event5} width="100%" /> */}
             </Box>
           </Grid>
         </Grid>
@@ -208,4 +189,4 @@ const EventCST = () => {
   );
 };
 
-export default EventCST;
+export default EventSLCP;

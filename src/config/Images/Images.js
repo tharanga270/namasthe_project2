@@ -138,6 +138,23 @@ export const event6 = require('../../Common/Assets/Images/event6.JPG');
 export const event_cst_1 = require('../../Common/Assets/Images/normal-events-carousel/CST1.JPG');
 export const event_cst_2 = require('../../Common/Assets/Images/normal-events-carousel/CST2.JPG');
 
+//event SACS
+export const event_sacs_1 = require('../../Common/Assets/Images/normal-events-carousel/SACS1.JPG');
+export const event_sacs_2 = require('../../Common/Assets/Images/normal-events-carousel/SACS2.JPG');
+
+//event AutismAwareness
+export const event_autism_awar_1 = require('../../Common/Assets/Images/normal-events-carousel/AutismAwar1.jpeg');
+export const event_autism_awar_2 = require('../../Common/Assets/Images/normal-events-carousel/AutismAwar2.jpeg');
+export const event_autism_awar_3 = require('../../Common/Assets/Images/normal-events-carousel/AutismAwar3.jpeg');
+
+//event IRD
+export const event_ird_1 = require('../../Common/Assets/Images/normal-events-carousel/IRD1.jpeg');
+
+//event VABS
+export const event_vabs_1 = require('../../Common/Assets/Images/normal-events-carousel/VABS_1.png');
+export const event_vabs_2 = require('../../Common/Assets/Images/normal-events-carousel/VABS_2.jpg');
+
+
 export const family = require('../../Common/Assets/Images/withbaby.png');
 export const contactus = require('../../Common/Assets/Images/contactus.png');
 

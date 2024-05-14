@@ -1,17 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Paper, Grid, Box, Typography } from '@mui/material';
-import { event6 } from '../../config/Images/Images';
 import { useSpring, animated } from 'react-spring';
 import { CarouselNormalEvents } from '../CarouselNormalEvents';
-import { event_sacs_1, event_sacs_2 } from '../../config/Images/Images';
+import { event_vabs_1, event_vabs_2 } from '../../config/Images/Images';
 
-const EventSACS = () => {
+const EventVABS = () => {
   const slideImages = [
     {
-      image: event_sacs_1,
+      image: event_vabs_1,
     },
     {
-      image: event_sacs_2,
+      image: event_vabs_2,
     },
   ];
   const [isVisible, setVisible] = useState(false);
@@ -133,7 +132,8 @@ const EventSACS = () => {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                SACS mock sessions for PHMs
+                Vineland Adaptive Behavior Scale (VABS) III training by Dr.
+                Pavithra Godamunne
               </Typography>
               <Typography
                 sx={{
@@ -162,11 +162,10 @@ const EventSACS = () => {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati optio ea aut eius voluptates commodi voluptas mollitia
-                quisquam nostrum, sunt, alias omnis tempora explicabo quibusdam
-                id inventore officiis recusandae saepe modi amet quos! Delectus,
-                dolorem.
+                Training session on the administration and scoring process of
+                the Vineland Adaptive Behavior Scales (VABS) III by Dr.
+                Pavithra, who is a child and adolescent psychologist and senior
+                lecturer.
               </Typography>
               <br />
               <Typography
@@ -197,9 +196,11 @@ const EventSACS = () => {
                   fontFamily: 'Poppins, sans-serif',
                 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                obcaecati saepe. Consequuntur id sequi mollitia accusamus vel.
-                Voluptatem ducimus excepturi dolorum voluptatum.
+                {/* Throughout the month, the SLCP and FHB collaborated to support
+                the NAMASTE team to raise awareness on autism within the
+                community. This ongoing effort included multiple initiatives
+                designed to educate the public on autism and guide them to
+                access appropriate services. */}
               </Typography>
             </Box>
           </Grid>
@@ -215,7 +216,7 @@ const EventSACS = () => {
               }}
             >
               {/* <img src={event6} alt={event6} width="100%" /> */}
-              <CarouselNormalEvents slideImages={slideImages}/>
+              <CarouselNormalEvents slideImages={slideImages} />
             </Box>
           </Grid>
         </Grid>
@@ -224,4 +225,4 @@ const EventSACS = () => {
   );
 };
 
-export default EventSACS;
+export default EventVABS;
