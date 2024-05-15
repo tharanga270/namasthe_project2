@@ -3,7 +3,7 @@ import Grid from '@mui/joy/Grid';
 import Container from '@mui/material/Container';
 import { Box } from '@mui/material';
 import Preloader from '../../Components/Preloader';
-import {underconstruction} from '../../config/Images/Images';
+import { underconstruction } from '../../config/Images/Images';
 
 const OngoingResearch = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +12,7 @@ const OngoingResearch = () => {
     // Simulate loading process (replace with your actual loading logic)
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
   return (
     <Container my={3}>

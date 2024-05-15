@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProjectObjectivesCard from "../../Components/ProjectObjectives/Index";
+import ProjectObjectivesCard from '../../Components/ProjectObjectives/Index';
 import Preloader from './../../Components/Preloader/index';
 const ProjectObjectives = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,7 +8,7 @@ const ProjectObjectives = () => {
     // Simulate loading process (replace with your actual loading logic)
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
   return (
     <div>

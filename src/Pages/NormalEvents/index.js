@@ -21,7 +21,7 @@ const NormalEvents = () => {
     // Simulate loading process (replace with your actual loading logic)
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
     window.scrollTo(0, 0);
   }, []);
   return (

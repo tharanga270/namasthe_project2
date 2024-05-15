@@ -5,17 +5,25 @@ import WeDo from '../../Components/WhatWeDo/Index';
 import CabCommunity from '../../Components/Cabcommunity/Index';
 import NeedToJoin from '../../Components/NeedToJoin/Index';
 import FooterCarousel from '../../Components/FooterCarousel/Index';
-import GSPreloader from './../../Components/GSPreloader/index';
+import Preloader from './../../Components/Preloader/index';
 const Home = () => {
-  const togglePreloader = () => {
-    // Call preloader.active(true) to open the preloader, preloader.active(false) to close it
-    preloader.active(!preloader.active());
-  };
+  // const togglePreloader = () => {
+  //   // Call preloader.active(true) to open the preloader, preloader.active(false) to close it
+  //   preloader.active(!preloader.active());
+  // };
 
-  let preloader = null;
+  // let preloader = null;
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading process (replace with your actual loading logic)
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
   return (
     <div>
-      {/* <GSPreloader/> */}
+      {isLoading ? <Preloader /> : <></>}
       <CarouselTransition />
       <Autism />
       <WeDo />

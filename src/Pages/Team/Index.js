@@ -12,7 +12,7 @@ const Team = () => {
     // Simulate loading process (replace with your actual loading logic)
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
   return (
     <div>
