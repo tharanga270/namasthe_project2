@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from '@material-tailwind/react';
 //import { event_cst_1, event_cst_2 } from '../../config/Images/Images';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+//import Typography from '@mui/material/Typography';
 import './style.css';
 // const slideImages = [
 //   {
@@ -29,6 +29,7 @@ export function CarouselNormalEvents(props) {
             alt={`Slide ${index}`}
             className="h-full w-full object-cover object-center"
             // style={{ objectFit: "cover" }}
+            style={{ height: '350px' }}
           />
         ))}
       </Carousel>

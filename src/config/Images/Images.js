@@ -131,7 +131,9 @@ export const event2 = require('../../Common/Assets/Images/img2.JPG');
 export const event3 = require('../../Common/Assets/Images/img3.JPG');
 export const event4 = require('../../Common/Assets/Images/event4.jpg');
 //event lotus=event5
-export const event5 = require('../../Common/Assets/Images/event5.webp');
+export const event_lotus_1 = require('../../Common/Assets/Images/normal-events-carousel/lotus1.webp');
+export const event_lotus_2 = require('../../Common/Assets/Images/normal-events-carousel/lotus2.jpeg');
+
 //event SACS=event6
 export const event6 = require('../../Common/Assets/Images/event6.JPG');
 //event CST

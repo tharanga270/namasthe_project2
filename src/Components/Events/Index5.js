@@ -1,8 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Paper, Grid, Box, Typography } from '@mui/material';
-import { event5 } from '../../config/Images/Images';
+//import { event5 } from '../../config/Images/Images';
 import { useSpring, animated } from 'react-spring';
+import { CarouselNormalEvents } from '../CarouselNormalEvents';
+import { event_lotus_1, event_lotus_2 } from '../../config/Images/Images';
 const EventLotusTower = () => {
+  const slideImages = [
+    {
+      image: event_lotus_1,
+    },
+    {
+      image: event_lotus_2,
+    },
+  ];
   const [isVisible, setVisible] = useState(false);
   const ref = useRef(null);
 
@@ -167,8 +177,7 @@ const EventLotusTower = () => {
                 },
                 fontFamily: 'Poppins, sans-serif',
               }}
-            >
-            </Typography>
+            ></Typography>
           </Grid>
           <Grid item xs={12} lg={6} md={12} sm={12} xl={6}>
             <Box
@@ -181,7 +190,8 @@ const EventLotusTower = () => {
                 mb: { lg: '7rem', xl: '0', md: '0', xs: '0' },
               }}
             >
-              <img src={event5} alt={event5} width="100%" />
+              {/* <img src={event5} alt={event5} width="100%" /> */}
+              <CarouselNormalEvents slideImages={slideImages} />
             </Box>
           </Grid>
         </Grid>

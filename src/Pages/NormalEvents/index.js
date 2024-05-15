@@ -45,8 +45,8 @@ const NormalEvents = () => {
       <EventLotusTower />
       <EventSACS />
       <EventCST />
-      <EventADOS />
-      <EventSLCP />
+      {/* <EventADOS /> */}
+      {/* <EventSLCP /> */}
       <EventAutismAwareness />
       <EventIRD />
       <EventVABS />
